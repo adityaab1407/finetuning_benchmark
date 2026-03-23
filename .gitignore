@@ -1,0 +1,53 @@
+# ──────────────────────────────────────────────────────────────────────
+# Financial Fine-Tuning Laboratory — .gitignore
+# ──────────────────────────────────────────────────────────────────────
+
+# Environment & secrets
+.env
+.finetune_env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Data artifacts (large / generated)
+data/raw/
+data/processed/
+data/chroma_db/
+data/synthetic/generated/
+
+# Evaluation outputs
+evaluation/results/
+
+# Model weights
+models/
+*.safetensors
+*.bin
+*.gguf
+
+# Archives
+*.zip
+*.tar.gz
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ──────────────────────────────────────────────────────────────────────
+# TRACKED (do NOT add these):
+#   data/eval_set/          — 50 benchmark questions
+#   data/synthetic/prompts/ — versioned generation prompts
+#   notebooks/              — Kaggle training notebooks
+# ──────────────────────────────────────────────────────────────────────
