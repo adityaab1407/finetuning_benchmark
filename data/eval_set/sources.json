@@ -1,0 +1,51 @@
+{
+  "description": "Maps each eval question to its source document",
+  "last_updated": "2026-03-23T12:29:11.249511+00:00",
+  "edgar_sources": {
+    "AAPL": [
+      "data/raw/AAPL_10-Q_2026-01-30.txt",
+      "data/raw/AAPL_10-Q_2025-08-01.txt"
+    ],
+    "MSFT": [
+      "data/raw/MSFT_10-Q_2026-01-28.txt",
+      "data/raw/MSFT_10-Q_2025-10-29.txt"
+    ],
+    "GOOGL": [
+      "data/raw/GOOGL_10-Q_2025-10-30.txt",
+      "data/raw/GOOGL_10-Q_2025-07-24.txt"
+    ],
+    "META": [
+      "data/raw/META_10-Q_2025-10-30.txt",
+      "data/raw/META_10-Q_2025-07-31.txt"
+    ],
+    "AMZN": [
+      "data/raw/AMZN_10-Q_2025-10-31.txt",
+      "data/raw/AMZN_10-Q_2025-08-01.txt"
+    ],
+    "NVDA": [
+      "data/raw/NVDA_10-Q_2025-11-19.txt",
+      "data/raw/NVDA_10-Q_2025-08-27.txt"
+    ],
+    "TSLA": [
+      "data/raw/TSLA_10-Q_2025-10-23.txt",
+      "data/raw/TSLA_10-Q_2025-07-24.txt"
+    ],
+    "JPM": [
+      "data/raw/JPM_10-Q_2025-11-04.txt",
+      "data/raw/JPM_10-Q_2025-08-05.txt"
+    ],
+    "V": [
+      "data/raw/V_10-Q_2026-01-30.txt",
+      "data/raw/V_10-Q_2025-07-30.txt"
+    ],
+    "NFLX": [
+      "data/raw/NFLX_10-Q_2025-10-22.txt",
+      "data/raw/NFLX_10-Q_2025-07-18.txt"
+    ]
+  },
+  "hf_sources": {
+    "financial_phrasebank": "data/processed/financial_phrasebank.json",
+    "fiqa": "data/processed/fiqa.json"
+  },
+  "question_source_map": {}
+}
