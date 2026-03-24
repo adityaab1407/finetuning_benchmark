@@ -8,3 +8,18 @@ Contains implementations of all six benchmark approaches:
     5. SFT fine-tuned model (Mistral-7B + QLoRA)
     6. DPO-aligned model
 """
+
+from approaches.base import ApproachResult, BaseApproach
+from approaches.cot import ChainOfThoughtApproach
+from approaches.few_shot import FewShotApproach
+from approaches.rag import RAGApproach
+from approaches.zero_shot import ZeroShotApproach
+
+__all__ = [
+    "ApproachResult",
+    "BaseApproach",
+    "ChainOfThoughtApproach",
+    "FewShotApproach",
+    "RAGApproach",
+    "ZeroShotApproach",
+]
