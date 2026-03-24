@@ -1,0 +1,1925 @@
+{
+  "version": "1.0.0",
+  "created_at": "2026-03-24T00:00:00",
+  "total_questions": 100,
+  "questions": [
+    {
+      "id": "q_fe_001",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Microsoft's total revenue for the three months ended December 31, 2025?",
+      "expected_answer": "$81,273 million",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Income Statements, Q2 FY2026 results",
+        "original_text": "Total revenue 81,273"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $81,273 million, $81.3 billion, or similar formats. Three months ended December 31, 2025 corresponds to Q2 FY2026."
+    },
+    {
+      "id": "q_fe_002",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Microsoft Cloud revenue for the three months ended December 31, 2025?",
+      "expected_answer": "$51.5 billion",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Segment Information, Microsoft Cloud revenue",
+        "original_text": "Our Microsoft Cloud revenue, which includes Microsoft 365 Commercial cloud, Azure and other cloud services, the commercial portion of LinkedIn, and Dynamics 365, was $51.5 billion and $100.6 billion for the three and six months ended December 31, 2025, respectively"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $51.5 billion, $51.5B, 51.5 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_003",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was the operating income for Microsoft's Intelligent Cloud segment for the three months ended December 31, 2025?",
+      "expected_answer": "$13,873 million",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Segment Information, Intelligent Cloud operating income",
+        "original_text": "Intelligent Cloud Revenue $32,907 ... Operating income $13,873"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $13,873 million, $13.9 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_004",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "How many shares of Microsoft common stock were outstanding as of January 22, 2026?",
+      "expected_answer": "7,425,629,076",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Cover page, shares outstanding",
+        "original_text": "Common Stock, $0.00000625 par value per share 7,425,629,076 shares"
+      },
+      "requires_context": true,
+      "evaluation_type": "exact_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Exact share count from cover page. Accepts 7,425,629,076 or 7425629076."
+    },
+    {
+      "id": "q_fe_005",
+      "category": "factual_extraction",
+      "difficulty": "hard",
+      "question": "How much remained available under Microsoft's $60.0 billion share repurchase program approved on September 16, 2024, as of December 31, 2025?",
+      "expected_answer": "$47.4 billion",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Stockholders' Equity, Share Repurchases",
+        "original_text": "As of December 31, 2025, $47.4 billion remained of this $60.0 billion share repurchase program."
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $47.4 billion, $47.4B, 47.4 billion."
+    },
+    {
+      "id": "q_fe_006",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Meta Platforms' total revenue for the three months ended September 30, 2025?",
+      "expected_answer": "$51,242 million",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Condensed Consolidated Statements of Income, Q3 2025 revenue",
+        "original_text": "Revenue $51,242"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $51,242 million, $51.2 billion, $51.24 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_007",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Meta Platforms' advertising revenue for the three months ended September 30, 2025?",
+      "expected_answer": "$50,082 million",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Revenue disaggregation, advertising revenue Q3 2025",
+        "original_text": "Advertising $50,082"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $50,082 million, $50.1 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_008",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Meta Platforms' headcount as of September 30, 2025?",
+      "expected_answer": "78,450",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Executive Overview of Third Quarter Results, headcount",
+        "original_text": "Headcount was 78,450 as of September 30, 2025, an increase of 8% year-over-year."
+      },
+      "requires_context": true,
+      "evaluation_type": "exact_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Exact headcount figure. Accepts 78,450 or 78450."
+    },
+    {
+      "id": "q_fe_009",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was the average daily active people (DAP) for Meta's Family of Apps during September 2025?",
+      "expected_answer": "3.54 billion",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Executive Overview, Family Metrics DAP",
+        "original_text": "Family daily active people (DAP) was 3.54 billion on average for September 2025, an increase of 8% year-over-year."
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts 3.54 billion, 3.54B, or similar formats."
+    },
+    {
+      "id": "q_fe_010",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Meta's Reality Labs operating loss for the nine months ended September 30, 2025?",
+      "expected_answer": "$13,171 million",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Segment profitability, Reality Labs operating loss",
+        "original_text": "Reality Labs (4,432) (4,428) —% (13,171) (12,762) (3)%"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $13,171 million, $13.2 billion, or a loss of $13.17 billion. The figure represents a loss."
+    },
+    {
+      "id": "q_fe_011",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was NVIDIA's total revenue for the three months ended October 26, 2025?",
+      "expected_answer": "$57,006 million",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Condensed Consolidated Statements of Income, Q3 FY2026 revenue",
+        "original_text": "Revenue $57,006"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $57,006 million, $57.0 billion, $57 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_012",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was NVIDIA's Data Center revenue for the three months ended October 26, 2025?",
+      "expected_answer": "$51,215 million",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Revenue by End Market, Data Center",
+        "original_text": "Data Center $51,215"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $51,215 million, $51.2 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_013",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was NVIDIA's net income for the three months ended October 26, 2025?",
+      "expected_answer": "$31,910 million",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Condensed Consolidated Statements of Income, net income",
+        "original_text": "Net income $31,910"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $31,910 million, $31.9 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_014",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was NVIDIA's Compute & Networking segment revenue for the three months ended October 26, 2025?",
+      "expected_answer": "$50,908 million",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Segment Information, Compute & Networking revenue",
+        "original_text": "Compute & Networking Revenue $50,908"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $50,908 million, $50.9 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_015",
+      "category": "factual_extraction",
+      "difficulty": "hard",
+      "question": "How much was NVIDIA authorized to repurchase in common stock as of October 26, 2025?",
+      "expected_answer": "$62.2 billion",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Capital Return to Shareholders, share repurchase authorization",
+        "original_text": "As of October 26, 2025, we were authorized, subject to certain specifications, to repurchase up to $62.2 billion of our common stock."
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $62.2 billion, $62.2B, 62.2 billion."
+    },
+    {
+      "id": "q_fe_016",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Alphabet's total revenue for the three months ended September 30, 2025?",
+      "expected_answer": "$102,346 million",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Consolidated Statements of Income, Q3 2025 revenue",
+        "original_text": "Revenues $88,268 $102,346"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $102,346 million, $102.3 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_017",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Google Cloud revenue for the three months ended September 30, 2025?",
+      "expected_answer": "$15,157 million",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Revenue disaggregation, Google Cloud revenue Q3 2025",
+        "original_text": "Google Cloud 11,353 15,157"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $15,157 million, $15.2 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_018",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "How many employees did Alphabet have as of September 30, 2025?",
+      "expected_answer": "190,167",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Executive Overview, employee count",
+        "original_text": "As of September 30, 2025, we had 190,167 employees."
+      },
+      "requires_context": true,
+      "evaluation_type": "exact_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Exact employee count. Accepts 190,167 or 190167."
+    },
+    {
+      "id": "q_fe_019",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Alphabet's capital expenditure for the three months ended September 30, 2025?",
+      "expected_answer": "$24.0 billion",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Executive Overview, capital expenditures",
+        "original_text": "Capital expenditures, which primarily reflected investments in technical infrastructure, were $24.0 billion for the three months ended September 30, 2025."
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $24.0 billion, $24 billion, $24.0B, or similar formats."
+    },
+    {
+      "id": "q_fe_020",
+      "category": "factual_extraction",
+      "difficulty": "hard",
+      "question": "What was the amount of Alphabet's revenue backlog (remaining performance obligations) as of September 30, 2025?",
+      "expected_answer": "$157.7 billion",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Revenue Backlog, remaining performance obligations",
+        "original_text": "As of September 30, 2025, we had $157.7 billion of remaining performance obligations (\"revenue backlog\"), primarily related to Google Cloud."
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $157.7 billion, $157.7B, 157.7 billion."
+    },
+    {
+      "id": "q_fe_021",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was Amazon's total net sales for the three months ended September 30, 2025?",
+      "expected_answer": "$180,169 million",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Consolidated Statements of Operations, Q3 2025 net sales",
+        "original_text": "Total net sales 158,877 180,169"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $180,169 million, $180.2 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_022",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Amazon Web Services (AWS) net sales for the three months ended September 30, 2025?",
+      "expected_answer": "$33,006 million",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Segment Information, AWS net sales Q3 2025",
+        "original_text": "AWS Net sales $27,452 $33,006"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $33,006 million, $33.0 billion, $33 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_023",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Amazon's advertising services revenue for the three months ended September 30, 2025?",
+      "expected_answer": "$17,703 million",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Net sales by groups of similar products and services, advertising services",
+        "original_text": "Advertising services (4) 14,331 17,703"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $17,703 million, $17.7 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_024",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was Amazon's diluted earnings per share for the three months ended September 30, 2025?",
+      "expected_answer": "$1.95",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Consolidated Statements of Operations, diluted EPS Q3 2025",
+        "original_text": "Diluted earnings per share $1.43 $1.95"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $1.95, 1.95, or $1.95 per share."
+    },
+    {
+      "id": "q_fe_025",
+      "category": "factual_extraction",
+      "difficulty": "hard",
+      "question": "What were Amazon's cash capital expenditures during Q3 2025 (three months ended September 30, 2025)?",
+      "expected_answer": "$34.2 billion",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Liquidity and Capital Resources, cash capital expenditures",
+        "original_text": "Cash capital expenditures were $21.3 billion and $34.2 billion during Q3 2024 and Q3 2025"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $34.2 billion, $34.2B, 34.2 billion."
+    },
+    {
+      "id": "q_fe_026",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was JPMorgan Chase's total net revenue for the three months ended September 30, 2025 (3Q25)?",
+      "expected_answer": "$46,427 million",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Consolidated financial highlights, 3Q25 total net revenue",
+        "original_text": "Total net revenue $46,427"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $46,427 million, $46.4 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_027",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "How many employees did JPMorgan Chase have as of September 30, 2025 (3Q25)?",
+      "expected_answer": "318,153",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Consolidated financial highlights, employee count 3Q25",
+        "original_text": "Employees 318,153"
+      },
+      "requires_context": true,
+      "evaluation_type": "exact_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Exact employee count. Accepts 318,153 or 318153."
+    },
+    {
+      "id": "q_fe_028",
+      "category": "factual_extraction",
+      "difficulty": "medium",
+      "question": "What was JPMorgan Chase's Common Equity Tier 1 (CET1) capital ratio as of September 30, 2025?",
+      "expected_answer": "14.8%",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Consolidated financial highlights, CET1 capital ratio 3Q25",
+        "original_text": "Common equity Tier 1 (\"CET1\") capital ratio (d)(e) 14.8"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts 14.8%, 14.8 percent, or 14.8."
+    },
+    {
+      "id": "q_fe_029",
+      "category": "factual_extraction",
+      "difficulty": "easy",
+      "question": "What was JPMorgan Chase's net income for the three months ended September 30, 2025 (3Q25)?",
+      "expected_answer": "$14,393 million",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Consolidated financial highlights, 3Q25 net income",
+        "original_text": "Net income $14,393"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $14,393 million, $14.4 billion, or similar formats."
+    },
+    {
+      "id": "q_fe_030",
+      "category": "factual_extraction",
+      "difficulty": "hard",
+      "question": "What was JPMorgan Chase's total assets as of September 30, 2025?",
+      "expected_answer": "$4,560,205 million",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Consolidated financial highlights, selected balance sheet data, total assets 3Q25",
+        "original_text": "Total assets 4,560,205"
+      },
+      "requires_context": true,
+      "evaluation_type": "fuzzy_match",
+      "created_at": "2026-03-24T00:00:00",
+      "notes": "Answer accepts $4,560,205 million, $4.56 trillion, $4.6 trillion, or similar formats."
+    },
+    {
+      "id": "q_se_001",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"We are glad that our long co-operation with SODRA continues '' , comments Stig-Goran Sandberg , Affecto 's Area Manager for Baltic operations .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1769 from Financial PhraseBank dataset",
+        "original_text": "We are glad that our long co-operation with SODRA continues '' , comments Stig-Goran Sandberg , Affecto 's Area Manager for Baltic operations ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1769. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_002",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish financial group Aktia 's operating profit for 2009 increased to EUR 47.0 mn from EUR 6.6 mn in 2008 .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_143 from Financial PhraseBank dataset",
+        "original_text": "Finnish financial group Aktia 's operating profit for 2009 increased to EUR 47.0 mn from EUR 6.6 mn in 2008 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_143. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_003",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"A portion , $ 12.5 million , will be recorded as part of its winnings in a prior patent dispute with Finnish phone maker Nokia Oyj .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_749 from Financial PhraseBank dataset",
+        "original_text": "A portion , $ 12.5 million , will be recorded as part of its winnings in a prior patent dispute with Finnish phone maker Nokia Oyj ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_749. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_004",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"For the first nine months of 2010 , Talvivaara 's net loss narrowed to EUR 8.3 million from EUR 21.9 million for the same period of 2009 .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_647 from Financial PhraseBank dataset",
+        "original_text": "For the first nine months of 2010 , Talvivaara 's net loss narrowed to EUR 8.3 million from EUR 21.9 million for the same period of 2009 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_647. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_005",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"In addition to fireplace exports , demand for lining stone has exceeded the level of the earlier part of the year and will continue to be clearly brisker for the remainder of the year .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_767 from Financial PhraseBank dataset",
+        "original_text": "In addition to fireplace exports , demand for lining stone has exceeded the level of the earlier part of the year and will continue to be clearly brisker for the remainder of the year ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_767. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_006",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish food company Raisio Oyj HEL : RAIVV said today it will buy British snacks and confectionery company Big Bear Group plc for an enterprise value of EUR 95.3 million USD 129.9 m .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_2456 from Financial PhraseBank dataset",
+        "original_text": "Finnish food company Raisio Oyj HEL : RAIVV said today it will buy British snacks and confectionery company Big Bear Group plc for an enterprise value of EUR 95.3 million USD 129.9 m ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_2456. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_007",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Sales for the Department Store Division increased by 15 % and sales for the clothing store subsidiary Seppala increased by 8 % Meanwhile sales for Hobby Hall decreased by 12 % .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_57 from Financial PhraseBank dataset",
+        "original_text": "Sales for the Department Store Division increased by 15 % and sales for the clothing store subsidiary Seppala increased by 8 % Meanwhile sales for Hobby Hall decreased by 12 % ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_57. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_008",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish retailer Stockmann has won approval from the board of Swedish rival Lindex for a public tender offer with the aim of expanding the companies ' presence in Russia and other CEE countries , Stockmann said Monday .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1524 from Financial PhraseBank dataset",
+        "original_text": "Finnish retailer Stockmann has won approval from the board of Swedish rival Lindex for a public tender offer with the aim of expanding the companies ' presence in Russia and other CEE countries , Stockmann said Monday ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1524. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_009",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Both operating profit and net sales for the six-month period increased , respectively from EUR0 .4 m and EUR3 .2 m , as compared to the corresponding period in 2005 .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_167 from Financial PhraseBank dataset",
+        "original_text": "Both operating profit and net sales for the six-month period increased , respectively from EUR0 .4 m and EUR3 .2 m , as compared to the corresponding period in 2005 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_167. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_010",
+      "category": "sentiment",
+      "difficulty": "hard",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"More than 200 volunteers from Fiskars , the garden tool company , Home Depot ( NYSE : HD ) , the city of Baltimore and the neighborhood are working right now to create a garden sanctuary - in a single day .\"",
+      "expected_answer": "positive",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1287 from Financial PhraseBank dataset",
+        "original_text": "More than 200 volunteers from Fiskars , the garden tool company , Home Depot ( NYSE : HD ) , the city of Baltimore and the neighborhood are working right now to create a garden sanctuary - in a single day ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1287. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_011",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Net profit fell by almost half to +é 5.5 million from +é 9.4 million at the end of 2007 .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4691 from Financial PhraseBank dataset",
+        "original_text": "Net profit fell by almost half to +é 5.5 million from +é 9.4 million at the end of 2007 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4691. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_012",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Operating profit , excluding non-recurring items , totaled EUR 0.2 mn , down from EUR 0.8 mn in the corresponding period in 2006 .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4416 from Financial PhraseBank dataset",
+        "original_text": "Operating profit , excluding non-recurring items , totaled EUR 0.2 mn , down from EUR 0.8 mn in the corresponding period in 2006 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4416. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_013",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish communication electronics components supplier Scanfil Oyj Tuesday said sales in the first half of 2006 will be 15 % lower than during the same period a year ago .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4019 from Financial PhraseBank dataset",
+        "original_text": "Finnish communication electronics components supplier Scanfil Oyj Tuesday said sales in the first half of 2006 will be 15 % lower than during the same period a year ago ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4019. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_014",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Publishing Sweden 's operating loss was EUR 1.1 mn in Q1 of 2009 , compared to a profit of EUR 0.6 mn a year ago .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4045 from Financial PhraseBank dataset",
+        "original_text": "Publishing Sweden 's operating loss was EUR 1.1 mn in Q1 of 2009 , compared to a profit of EUR 0.6 mn a year ago ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4045. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_015",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"In January-June 2010 , diluted loss per share stood at EUR0 .3 versus EUR0 .1 in the first half of 2009 .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4062 from Financial PhraseBank dataset",
+        "original_text": "In January-June 2010 , diluted loss per share stood at EUR0 .3 versus EUR0 .1 in the first half of 2009 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4062. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_016",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Cerberus Capital Management LP-backed printing paper maker NewPage Corp. has posted mixed second-quarter results , casting a cloud over its planned initial public offering .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4056 from Financial PhraseBank dataset",
+        "original_text": "Cerberus Capital Management LP-backed printing paper maker NewPage Corp. has posted mixed second-quarter results , casting a cloud over its planned initial public offering ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4056. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_017",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Seven-month sales of Ragutis , which is controlled by the Finnish brewery Olvi , declined by 11.2 percent , to 15.41 million liters , and the company held 9.89 percent of the market .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4828 from Financial PhraseBank dataset",
+        "original_text": "Seven-month sales of Ragutis , which is controlled by the Finnish brewery Olvi , declined by 11.2 percent , to 15.41 million liters , and the company held 9.89 percent of the market ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4828. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_018",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Net cash flow from operating activities was a negative EUR 3.1 mn , compared to EUR 23.3 mn in the corresponding period in 2009 .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4407 from Financial PhraseBank dataset",
+        "original_text": "Net cash flow from operating activities was a negative EUR 3.1 mn , compared to EUR 23.3 mn in the corresponding period in 2009 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4407. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_019",
+      "category": "sentiment",
+      "difficulty": "hard",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish IT solutions provider Affecto Oyj HEL : AFE1V said today its slipped to a net loss of EUR 115,000 USD 152,000 in the second quarter of 2010 from a profit of EUR 845,000 in the corresponding period a year earlier .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_675 from Financial PhraseBank dataset",
+        "original_text": "Finnish IT solutions provider Affecto Oyj HEL : AFE1V said today its slipped to a net loss of EUR 115,000 USD 152,000 in the second quarter of 2010 from a profit of EUR 845,000 in the corresponding period a year earlier ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_675. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_020",
+      "category": "sentiment",
+      "difficulty": "hard",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Finnish business software group AffectoGenimap Oyj said its net profit halved to 1.2 mln euro ( $ 1.5 mln ) in the first nine months of 2006 from 2.2 mln euro ( $ 2.8 mln ) in the same period of 2005 .\"",
+      "expected_answer": "negative",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4675 from Financial PhraseBank dataset",
+        "original_text": "Finnish business software group AffectoGenimap Oyj said its net profit halved to 1.2 mln euro ( $ 1.5 mln ) in the first nine months of 2006 from 2.2 mln euro ( $ 2.8 mln ) in the same period of 2005 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4675. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_021",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Previously , Grimaldi held a 46.43 pct stake in the Finnish company following the takeover bid launched in November 2006 .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_3088 from Financial PhraseBank dataset",
+        "original_text": "Previously , Grimaldi held a 46.43 pct stake in the Finnish company following the takeover bid launched in November 2006 ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_3088. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_022",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"In 2006 , 452 million tonnes CO2 of EUA ( EU Allowance ; emissions credit in EU ) was traded with an underlying market value approx .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_2945 from Financial PhraseBank dataset",
+        "original_text": "In 2006 , 452 million tonnes CO2 of EUA ( EU Allowance ; emissions credit in EU ) was traded with an underlying market value approx ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_2945. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_023",
+      "category": "sentiment",
+      "difficulty": "easy",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"The Finnish food concern Atria is about to acquire two Estonian meat processing companies , Woro Kommerts and Vastse-Kuuste Lihatoostus , reported the Official website www.investinestonia.com .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4349 from Financial PhraseBank dataset",
+        "original_text": "The Finnish food concern Atria is about to acquire two Estonian meat processing companies , Woro Kommerts and Vastse-Kuuste Lihatoostus , reported the Official website www.investinestonia.com ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4349. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_024",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Some of the most recent technology deliveries include refinery technology to Anrak Aluminium , an iron ore pelletizing plant to Tata Steel and iron ore sintering plants to Bhushan Steel .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_2563 from Financial PhraseBank dataset",
+        "original_text": "Some of the most recent technology deliveries include refinery technology to Anrak Aluminium , an iron ore pelletizing plant to Tata Steel and iron ore sintering plants to Bhushan Steel ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_2563. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_025",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"At some point in 2010 , all separate company names , such as Palmberg , Tekmanni , Lemcon , Forssan Betoni , Suonenjoen Betonituote , among others , will disappear .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_4009 from Financial PhraseBank dataset",
+        "original_text": "At some point in 2010 , all separate company names , such as Palmberg , Tekmanni , Lemcon , Forssan Betoni , Suonenjoen Betonituote , among others , will disappear ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_4009. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_026",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"One of the opportunities would be to bring all Baltic meat processing to Rakvere , like processing was concentrated at the Vantaa meat-packing unit in Finland , the paper wrote .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1572 from Financial PhraseBank dataset",
+        "original_text": "One of the opportunities would be to bring all Baltic meat processing to Rakvere , like processing was concentrated at the Vantaa meat-packing unit in Finland , the paper wrote ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1572. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_027",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Mr. Atul Chopra , Chief Operating Officer & President , Tecnotree elaborated '' I am eager to see the continued success of the former Tecnomen , bringing Lifetree product to MENA , under the Tecnotree umbrella .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1754 from Financial PhraseBank dataset",
+        "original_text": "Mr. Atul Chopra , Chief Operating Officer & President , Tecnotree elaborated '' I am eager to see the continued success of the former Tecnomen , bringing Lifetree product to MENA , under the Tecnotree umbrella ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1754. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_028",
+      "category": "sentiment",
+      "difficulty": "medium",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"The proposal by the Board of Directors on the issuance of option rights will otherwise correspond to the proposal by the Board of Directors in the Notice to the General Meeting .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_2669 from Financial PhraseBank dataset",
+        "original_text": "The proposal by the Board of Directors on the issuance of option rights will otherwise correspond to the proposal by the Board of Directors in the Notice to the General Meeting ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_2669. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_029",
+      "category": "sentiment",
+      "difficulty": "hard",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Most recently , he founded Virent Energy Systems , Inc. , an 80 person catalytic biofuels company , where , as president and CEO , he led the company through multiple financings , defined the company 's market strategy , and secured the company 's first customers .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_3680 from Financial PhraseBank dataset",
+        "original_text": "Most recently , he founded Virent Energy Systems , Inc. , an 80 person catalytic biofuels company , where , as president and CEO , he led the company through multiple financings , defined the company 's market strategy , and secured the company 's first customers ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_3680. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_se_030",
+      "category": "sentiment",
+      "difficulty": "hard",
+      "question": "Classify the sentiment of the following financial text as positive, negative, or neutral:\n\n\"Ahlstrom Corporation STOCK EXCHANGE RELEASE 13.02.2008 Ahlstrom , a global leader in high performance fiber-based materials , today announced the completion of the acquisition of Friend Group Inc. , which consists of West Carrollton Parchment Company and West Carrollton Converting Company .\"",
+      "expected_answer": "neutral",
+      "source": {
+        "document_id": "financial_phrasebank",
+        "source_type": "financial_phrasebank",
+        "ticker": null,
+        "filing_date": null,
+        "section_hint": "Sentence fpb_1161 from Financial PhraseBank dataset",
+        "original_text": "Ahlstrom Corporation STOCK EXCHANGE RELEASE 13.02.2008 Ahlstrom , a global leader in high performance fiber-based materials , today announced the completion of the acquisition of Friend Group Inc. , which consists of West Carrollton Parchment Company and West Carrollton Converting Company ."
+      },
+      "requires_context": false,
+      "evaluation_type": "classification",
+      "created_at": "2026-03-24T07:51:23",
+      "notes": "Source sentence ID: fpb_1161. Ground-truth label from Financial PhraseBank (>66% annotator agreement)."
+    },
+    {
+      "id": "q_so_001",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: cloud_revenue, cloud_revenue_growth_rate, remaining_performance_obligation. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Microsoft Cloud revenue increased 26% to $51.5 billion. Commercial remaining performance obligation increased 110% to $625 billion.\"",
+      "expected_answer": "{\"cloud_revenue\": \"$51.5 billion\", \"cloud_revenue_growth_rate\": \"26%\", \"remaining_performance_obligation\": \"$625 billion\"}",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Financial highlights, Q2 FY2026 key metrics",
+        "original_text": "Microsoft Cloud revenue increased 26% to $51.5 billion. Commercial remaining performance obligation increased 110% to $625 billion."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "All three values explicitly stated in the bullet points."
+    },
+    {
+      "id": "q_so_002",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: shares_repurchased_current, shares_repurchased_prior, repurchase_amount_current, repurchase_amount_prior, repurchase_program_remaining. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"For the six months ended December 31, 2025 and 2024, we repurchased 20 million shares and 15 million shares of our common stock for $9.9 billion and $6.3 billion, respectively, through our share repurchase program. All repurchases were made using cash resources. As of December 31, 2025, $47.4 billion remained of our $60 billion share repurchase program. Refer to Note 14 – Stockholders’ Equity of the Notes to Financial Statements (Part I, Item 1 of this Form 10-Q).\"",
+      "expected_answer": "{\"shares_repurchased_current\": \"20 million shares\", \"shares_repurchased_prior\": \"15 million shares\", \"repurchase_amount_current\": \"$9.9 billion\", \"repurchase_amount_prior\": \"$6.3 billion\", \"repurchase_program_remaining\": \"$47.4 billion\"}",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Share repurchase program, six months ended December 31, 2025",
+        "original_text": "For the six months ended December 31, 2025 and 2024, we repurchased 20 million shares and 15 million shares of our common stock for $9.9 billion and $6.3 billion, respectively, through our share repurchase program. All repurchases were made using cash resources. As of December 31, 2025, $47.4 billion remained of our $60 billion share repurchase program. Refer to Note 14 – Stockholders’ Equity of the Notes to Financial Statements (Part I, Item 1 of this Form 10-Q)."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Five values explicitly stated. Current/prior refer to six months ended Dec 31 2025 and 2024."
+    },
+    {
+      "id": "q_so_003",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: current_year_net_income_impact, current_year_eps_impact, prior_year_net_income_impact, prior_year_eps_impact. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Current year net income and diluted EPS were positively impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted EPS of $7.6 billion and $1.02, respectively. Prior year net income and diluted EPS were negatively impacted by net losses from investments in OpenAI, which resulted in a decrease in net income and diluted EPS of $939 million and $0.12, respectively.\"",
+      "expected_answer": "{\"current_year_net_income_impact\": \"$7.6 billion\", \"current_year_eps_impact\": \"$1.02\", \"prior_year_net_income_impact\": \"$939 million\", \"prior_year_eps_impact\": \"$0.12\"}",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Impact of OpenAI investments on net income and EPS, Q2 FY2026",
+        "original_text": "Current year net income and diluted EPS were positively impacted by net gains from investments in OpenAI, which resulted in an increase in net income and diluted EPS of $7.6 billion and $1.02, respectively. Prior year net income and diluted EPS were negatively impacted by net losses from investments in OpenAI, which resulted in a decrease in net income and diluted EPS of $939 million and $0.12, respectively."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Four explicitly stated values. Prior year values are decreases (losses)."
+    },
+    {
+      "id": "q_so_004",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: total_revenue, revenue_growth_rate, constant_currency_growth_rate, ad_impressions_growth, average_price_per_ad_growth. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Our financial results and key Family metrics for the third quarter of 2025 are set forth below. Total revenue for the third quarter of 2025 was $51.24 billion, an increase of 26% compared to the third quarter of 2024, due to an increase in advertising revenue. Revenue on a constant currency basis would have increased 25% compared to the third quarter of 2024. Ad impressions delivered across our Family of Apps in the third quarter of 2025 increased 14% year-over-year, and our average price per ad in the third quarter of 2025 increased 10% year-over-year.\"",
+      "expected_answer": "{\"total_revenue\": \"$51.24 billion\", \"revenue_growth_rate\": \"26%\", \"constant_currency_growth_rate\": \"25%\", \"ad_impressions_growth\": \"14%\", \"average_price_per_ad_growth\": \"10%\"}",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Q3 2025 financial results and key Family metrics",
+        "original_text": "Our financial results and key Family metrics for the third quarter of 2025 are set forth below. Total revenue for the third quarter of 2025 was $51.24 billion, an increase of 26% compared to the third quarter of 2024, due to an increase in advertising revenue. Revenue on a constant currency basis would have increased 25% compared to the third quarter of 2024. Ad impressions delivered across our Family of Apps in the third quarter of 2025 increased 14% year-over-year, and our average price per ad in the third quarter of 2025 increased 10% year-over-year."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Five values from the overview paragraph. All explicitly stated."
+    },
+    {
+      "id": "q_so_005",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: r_and_d_increase_quarterly, r_and_d_increase_nine_months. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Research and development expenses in the three and nine months ended September 30, 2025 increased $3.97 billion, or 35%, and $8.54 billion, or 27%, respectively, compared to the same periods in 2024.\"",
+      "expected_answer": "{\"r_and_d_increase_quarterly\": \"$3.97 billion\", \"r_and_d_increase_nine_months\": \"$8.54 billion\"}",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Research and development expenses discussion",
+        "original_text": "Research and development expenses in the three and nine months ended September 30, 2025 increased $3.97 billion, or 35%, and $8.54 billion, or 27%, respectively, compared to the same periods in 2024."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Two dollar values explicitly stated. Truncated to first sentence."
+    },
+    {
+      "id": "q_so_006",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: rl_revenue_increase_quarterly, rl_revenue_increase_quarterly_pct, rl_revenue_increase_nine_months, rl_revenue_increase_nine_months_pct. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"RL revenue in the three months ended September 30, 2025 increased $200 million, or 74%, compared to the same period in 2024, mostly due to increases in sales of Meta Quest and AI glasses. RL revenue in the nine months ended September 30, 2025 increased $189 million, or 18%, compared to the same period in 2024, primarily due to an increase in sales of AI glasses.\"",
+      "expected_answer": "{\"rl_revenue_increase_quarterly\": \"$200 million\", \"rl_revenue_increase_quarterly_pct\": \"74%\", \"rl_revenue_increase_nine_months\": \"$189 million\", \"rl_revenue_increase_nine_months_pct\": \"18%\"}",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Reality Labs revenue, three and nine months ended September 30, 2025",
+        "original_text": "RL revenue in the three months ended September 30, 2025 increased $200 million, or 74%, compared to the same period in 2024, mostly due to increases in sales of Meta Quest and AI glasses. RL revenue in the nine months ended September 30, 2025 increased $189 million, or 18%, compared to the same period in 2024, primarily due to an increase in sales of AI glasses."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Four values all explicitly stated."
+    },
+    {
+      "id": "q_so_007",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: compute_revenue, networking_revenue. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Data Center compute revenue was $43.0 billion, up 56% from a year ago and up 27% sequentially. Networking revenue was $8.2 billion, up 162% from a year ago.\"",
+      "expected_answer": "{\"compute_revenue\": \"$43.0 billion\", \"networking_revenue\": \"$8.2 billion\"}",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Data Center segment revenue breakdown, Q3 FY2026",
+        "original_text": "Data Center compute revenue was $43.0 billion, up 56% from a year ago and up 27% sequentially. Networking revenue was $8.2 billion, up 162% from a year ago."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Two revenue figures explicitly stated. Truncated to two sentences."
+    },
+    {
+      "id": "q_so_008",
+      "category": "structured_output",
+      "difficulty": "hard",
+      "question": "Read the following paragraph and extract these fields into a JSON object: tax_expense_q3_fy2026, tax_expense_q3_fy2025, tax_expense_nine_months_fy2026, tax_expense_nine_months_fy2025, effective_tax_rate_q3_fy2026, effective_tax_rate_q3_fy2025. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Income tax expense was $6.0 billion and $3.0 billion for the third quarter, and $13.9 billion and $8.0 billion for the first nine months, of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income before income tax was an expense of 15.9% and 13.5% for the third quarter, and 15.3% and 13.6% for the first nine months, of fiscal years 2026 and 2025, respectively.\"",
+      "expected_answer": "{\"tax_expense_q3_fy2026\": \"$6.0 billion\", \"tax_expense_q3_fy2025\": \"$3.0 billion\", \"tax_expense_nine_months_fy2026\": \"$13.9 billion\", \"tax_expense_nine_months_fy2025\": \"$8.0 billion\", \"effective_tax_rate_q3_fy2026\": \"15.9%\", \"effective_tax_rate_q3_fy2025\": \"13.5%\"}",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Income tax expense, Q3 and nine months fiscal years 2026 and 2025",
+        "original_text": "Income tax expense was $6.0 billion and $3.0 billion for the third quarter, and $13.9 billion and $8.0 billion for the first nine months, of fiscal years 2026 and 2025, respectively. Income tax as a percentage of income before income tax was an expense of 15.9% and 13.5% for the third quarter, and 15.3% and 13.6% for the first nine months, of fiscal years 2026 and 2025, respectively."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Six fields all explicitly stated. Fiscal year references differ from calendar year."
+    },
+    {
+      "id": "q_so_009",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: shares_repurchased_q3, repurchase_amount_q3, shares_repurchased_nine_months, repurchase_amount_nine_months, new_repurchase_authorization. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"We repurchased 70 million and 262 million shares of our common stock for $12.6 billion and $36.7 billion during the third quarter and first nine months of fiscal year 2026, respectively. On August 26, 2025, our Board of Directors approved an additional $60.0 billion in share repurchase authorization, without expiration.\"",
+      "expected_answer": "{\"shares_repurchased_q3\": \"70 million\", \"repurchase_amount_q3\": \"$12.6 billion\", \"shares_repurchased_nine_months\": \"262 million\", \"repurchase_amount_nine_months\": \"$36.7 billion\", \"new_repurchase_authorization\": \"$60.0 billion\"}",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Share repurchase activity, Q3 and nine months FY2026",
+        "original_text": "We repurchased 70 million and 262 million shares of our common stock for $12.6 billion and $36.7 billion during the third quarter and first nine months of fiscal year 2026, respectively. On August 26, 2025, our Board of Directors approved an additional $60.0 billion in share repurchase authorization, without expiration."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Five values all explicitly stated. Truncated from full paragraph."
+    },
+    {
+      "id": "q_so_010",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: total_revenues, google_services_revenue_increase, google_cloud_revenue_increase. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Revenues were $102.3 billion, an increase of 16% year over year, primarily driven by an increase in Google Services revenues of $10.5 billion, or 14%, and an increase in Google Cloud revenues of $3.8 billion, or 34%.\"",
+      "expected_answer": "{\"total_revenues\": \"$102.3 billion\", \"google_services_revenue_increase\": \"$10.5 billion\", \"google_cloud_revenue_increase\": \"$3.8 billion\"}",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Revenue overview, three months ended September 30, 2025",
+        "original_text": "Revenues were $102.3 billion, an increase of 16% year over year, primarily driven by an increase in Google Services revenues of $10.5 billion, or 14%, and an increase in Google Cloud revenues of $3.8 billion, or 34%."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Three dollar values explicitly stated."
+    },
+    {
+      "id": "q_so_011",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: r_and_d_increase_total, compensation_expense_increase, depreciation_expense_increase, infrastructure_operations_cost_increase. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"R&D expenses increased $2.7 billion from the three months ended September 30, 2024 to the three months ended September 30, 2025, primarily driven by increases in employee compensation expenses of $1.5 billion, depreciation expense of $659 million, and other technical infrastructure operations costs of $407 million.\"",
+      "expected_answer": "{\"r_and_d_increase_total\": \"$2.7 billion\", \"compensation_expense_increase\": \"$1.5 billion\", \"depreciation_expense_increase\": \"$659 million\", \"infrastructure_operations_cost_increase\": \"$407 million\"}",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "R&D expenses, three months ended September 30, 2025",
+        "original_text": "R&D expenses increased $2.7 billion from the three months ended September 30, 2024 to the three months ended September 30, 2025, primarily driven by increases in employee compensation expenses of $1.5 billion, depreciation expense of $659 million, and other technical infrastructure operations costs of $407 million."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Four values explicitly stated as driver components of R&D increase."
+    },
+    {
+      "id": "q_so_012",
+      "category": "structured_output",
+      "difficulty": "hard",
+      "question": "Read the following paragraph and extract these fields into a JSON object: class_a_dividends_quarterly, class_a_dividends_nine_months, class_b_dividends_quarterly, class_b_dividends_nine_months, class_c_dividends_quarterly, class_c_dividends_nine_months. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"In the three and nine months ended September 30, 2025, total cash dividends were $1.2 billion and $3.6 billion for Class A, $177 million and $527 million for Class B, and $1.1 billion and $3.4 billion for Class C shares, respectively.\"",
+      "expected_answer": "{\"class_a_dividends_quarterly\": \"$1.2 billion\", \"class_a_dividends_nine_months\": \"$3.6 billion\", \"class_b_dividends_quarterly\": \"$177 million\", \"class_b_dividends_nine_months\": \"$527 million\", \"class_c_dividends_quarterly\": \"$1.1 billion\", \"class_c_dividends_nine_months\": \"$3.4 billion\"}",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Cash dividends by share class, three and nine months ended September 30, 2025",
+        "original_text": "In the three and nine months ended September 30, 2025, total cash dividends were $1.2 billion and $3.6 billion for Class A, $177 million and $527 million for Class B, and $1.1 billion and $3.4 billion for Class C shares, respectively."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Six values, requires careful extraction by share class."
+    },
+    {
+      "id": "q_so_013",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: guidance_low, guidance_high. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Net sales are expected to be between $206.0 billion and $213.0 billion, or to grow between 10% and 13% compared with fourth quarter 2024. This guidance anticipates a favorable impact of approximately 190 basis points from foreign exchange rates.\"",
+      "expected_answer": "{\"guidance_low\": \"$206.0 billion\", \"guidance_high\": \"$213.0 billion\"}",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Fourth Quarter 2025 Guidance, net sales",
+        "original_text": "Net sales are expected to be between $206.0 billion and $213.0 billion, or to grow between 10% and 13% compared with fourth quarter 2024. This guidance anticipates a favorable impact of approximately 190 basis points from foreign exchange rates."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Two guidance range values explicitly stated."
+    },
+    {
+      "id": "q_so_014",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: cash_and_securities_dec_2024, cash_and_securities_sep_2025, foreign_currency_dec_2024, foreign_currency_sep_2025. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Our principal sources of liquidity are cash flows generated from operations and our cash, cash equivalents, and marketable securities balances, which, at fair value, were $101.2 billion and $94.2 billion as of December 31, 2024 and September 30, 2025. Amounts held in foreign currencies were $25.5 billion and $20.4 billion as of December 31, 2024 and September 30, 2025. Our foreign currency balances include British Pounds, Canadian Dollars, Euros, Indian Rupees, and Japanese Yen.\"",
+      "expected_answer": "{\"cash_and_securities_dec_2024\": \"$101.2 billion\", \"cash_and_securities_sep_2025\": \"$94.2 billion\", \"foreign_currency_dec_2024\": \"$25.5 billion\", \"foreign_currency_sep_2025\": \"$20.4 billion\"}",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Liquidity and capital resources, cash and securities balances",
+        "original_text": "Our principal sources of liquidity are cash flows generated from operations and our cash, cash equivalents, and marketable securities balances, which, at fair value, were $101.2 billion and $94.2 billion as of December 31, 2024 and September 30, 2025. Amounts held in foreign currencies were $25.5 billion and $20.4 billion as of December 31, 2024 and September 30, 2025. Our foreign currency balances include British Pounds, Canadian Dollars, Euros, Indian Rupees, and Japanese Yen."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Four values for two periods explicitly stated."
+    },
+    {
+      "id": "q_so_015",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: net_revenue, net_interest_income, noninterest_revenue. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Net revenue was $6.1 billion, up 12%. Net interest income was $1.7 billion, up 5%. Noninterest revenue was $4.3 billion, up 14%.\"",
+      "expected_answer": "{\"net_revenue\": \"$6.1 billion\", \"net_interest_income\": \"$1.7 billion\", \"noninterest_revenue\": \"$4.3 billion\"}",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Commercial & Investment Bank segment, Q3 2025 results",
+        "original_text": "Net revenue was $6.1 billion, up 12%. Net interest income was $1.7 billion, up 5%. Noninterest revenue was $4.3 billion, up 14%."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Three revenue figures explicitly stated."
+    },
+    {
+      "id": "q_so_016",
+      "category": "structured_output",
+      "difficulty": "hard",
+      "question": "Read the following paragraph and extract these fields into a JSON object: provision_for_credit_losses, net_charge_offs, net_charge_offs_increase, allowance_addition, consumer_allowance, wholesale_allowance. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"The provision for credit losses was $3.4 billion. Net charge-offs of $2.6 billion were up $506 million, predominantly driven by Wholesale and Card Services. The net addition to the allowance for credit losses was $810 million and included $608 million in consumer and $205 million in wholesale.\"",
+      "expected_answer": "{\"provision_for_credit_losses\": \"$3.4 billion\", \"net_charge_offs\": \"$2.6 billion\", \"net_charge_offs_increase\": \"$506 million\", \"allowance_addition\": \"$810 million\", \"consumer_allowance\": \"$608 million\", \"wholesale_allowance\": \"$205 million\"}",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Credit quality, provision for credit losses, Q3 2025",
+        "original_text": "The provision for credit losses was $3.4 billion. Net charge-offs of $2.6 billion were up $506 million, predominantly driven by Wholesale and Card Services. The net addition to the allowance for credit losses was $810 million and included $608 million in consumer and $205 million in wholesale."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Six values all explicitly stated."
+    },
+    {
+      "id": "q_so_017",
+      "category": "structured_output",
+      "difficulty": "easy",
+      "question": "Read the following paragraph and extract these fields into a JSON object: available_cash_and_securities_sep_2025, available_cash_and_securities_dec_2024. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"The Firm had approximately $1.5 trillion and $1.4 trillion of available cash and securities as of September 30, 2025 and December 31, 2024, respectively.\"",
+      "expected_answer": "{\"available_cash_and_securities_sep_2025\": \"$1.5 trillion\", \"available_cash_and_securities_dec_2024\": \"$1.4 trillion\"}",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Liquidity resources, available cash and securities",
+        "original_text": "The Firm had approximately $1.5 trillion and $1.4 trillion of available cash and securities as of September 30, 2025 and December 31, 2024, respectively."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Two values explicitly stated for two periods."
+    },
+    {
+      "id": "q_so_018",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: cash_and_equivalents, short_term_investments, foreign_currency_balances, unused_credit. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"As of September 30, 2025, we had $18.29 billion and $23.36 billion of cash and cash equivalents and short-term investments, respectively. Balances held in foreign currencies had a U.S. dollar equivalent of $4.29 billion and consisted primarily of euros and Chinese yuan. We had $7.39 billion of unused committed credit amounts as of September 30, 2025. For details regarding our indebtedness, refer to Note 7,\"",
+      "expected_answer": "{\"cash_and_equivalents\": \"$18.29 billion\", \"short_term_investments\": \"$23.36 billion\", \"foreign_currency_balances\": \"$4.29 billion\", \"unused_credit\": \"$7.39 billion\"}",
+      "source": {
+        "document_id": "TSLA_10-Q_2025-10-23",
+        "source_type": "edgar",
+        "ticker": "TSLA",
+        "filing_date": "2025-10-23",
+        "section_hint": "Liquidity and capital resources, cash position as of September 30, 2025",
+        "original_text": "As of September 30, 2025, we had $18.29 billion and $23.36 billion of cash and cash equivalents and short-term investments, respectively. Balances held in foreign currencies had a U.S. dollar equivalent of $4.29 billion and consisted primarily of euros and Chinese yuan. We had $7.39 billion of unused committed credit amounts as of September 30, 2025. For details regarding our indebtedness, refer to Note 7,"
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Four values explicitly stated."
+    },
+    {
+      "id": "q_so_019",
+      "category": "structured_output",
+      "difficulty": "hard",
+      "question": "Read the following paragraph and extract these fields into a JSON object: sga_increase_total, sga_increase_pct, operating_expenses_increase, employee_labor_increase, stock_compensation_increase, marketing_increase. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Selling, general and administrative (“SG&A”) expenses increased $376 million, or 32%, in the three months ended September 30, 2025 as compared to the three months ended September 30, 2024, driven by a $168 million increase in operating expenses including legal charges, a $151 million increase in employee and labor costs, including professional services, a $38 million increase in stock-based compensation and a $25 million increase in marketing expenses.\"",
+      "expected_answer": "{\"sga_increase_total\": \"$376 million\", \"sga_increase_pct\": \"32%\", \"operating_expenses_increase\": \"$168 million\", \"employee_labor_increase\": \"$151 million\", \"stock_compensation_increase\": \"$38 million\", \"marketing_increase\": \"$25 million\"}",
+      "source": {
+        "document_id": "TSLA_10-Q_2025-10-23",
+        "source_type": "edgar",
+        "ticker": "TSLA",
+        "filing_date": "2025-10-23",
+        "section_hint": "SG&A expenses, three months ended September 30, 2025",
+        "original_text": "Selling, general and administrative (“SG&A”) expenses increased $376 million, or 32%, in the three months ended September 30, 2025 as compared to the three months ended September 30, 2024, driven by a $168 million increase in operating expenses including legal charges, a $151 million increase in employee and labor costs, including professional services, a $38 million increase in stock-based compensation and a $25 million increase in marketing expenses."
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Six values all explicitly stated as components of SG&A increase."
+    },
+    {
+      "id": "q_so_020",
+      "category": "structured_output",
+      "difficulty": "medium",
+      "question": "Read the following paragraph and extract these fields into a JSON object: debt_decrease, debt_repayments, principal_and_interest_due_next_12_months, revolving_credit_facility, commercial_paper_program. Use null for any field not mentioned in the paragraph.\n\nParagraph: \"Debt, net of debt issuance costs and discounts, decreased $1,120 million primarily due to approximately $1,833 million in repayments of debt, partially offset by the remeasurement of our euro-denominated notes in the nine months ended September 30, 2025.  The amount of principal and interest on our outstanding notes due in the next twelve months is $690 million. As of September 30, 2025, no amounts had been borrowed under the $3 billion Revolving Credit Agreement or the $3 billion Commercial Paper Program.  See Note 6\"",
+      "expected_answer": "{\"debt_decrease\": \"$1,120 million\", \"debt_repayments\": \"$1,833 million\", \"principal_and_interest_due_next_12_months\": \"$690 million\", \"revolving_credit_facility\": \"$3 billion\", \"commercial_paper_program\": \"$3 billion\"}",
+      "source": {
+        "document_id": "NFLX_10-Q_2025-10-22",
+        "source_type": "edgar",
+        "ticker": "NFLX",
+        "filing_date": "2025-10-22",
+        "section_hint": "Debt and liquidity discussion, nine months ended September 30, 2025",
+        "original_text": "Debt, net of debt issuance costs and discounts, decreased $1,120 million primarily due to approximately $1,833 million in repayments of debt, partially offset by the remeasurement of our euro-denominated notes in the nine months ended September 30, 2025.  The amount of principal and interest on our outstanding notes due in the next twelve months is $690 million. As of September 30, 2025, no amounts had been borrowed under the $3 billion Revolving Credit Agreement or the $3 billion Commercial Paper Program.  See Note 6"
+      },
+      "requires_context": true,
+      "evaluation_type": "schema_validation",
+      "created_at": "2026-03-24T07:59:46",
+      "notes": "Five values explicitly stated. Approximate notation used for repayments."
+    },
+    {
+      "id": "q_re_001",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "NVIDIA reported total revenue of $46.7 billion for Q2 FY2026 (three months ended July 27, 2025), up 56% year-over-year. For Q3 FY2026 (three months ended October 26, 2025), NVIDIA reported total revenue of $57.0 billion, up 62% year-over-year. Is NVIDIA's year-over-year revenue growth rate accelerating or decelerating between Q2 and Q3 FY2026?",
+      "expected_answer": "Accelerating. The year-over-year revenue growth rate increased from 56% in Q2 FY2026 to 62% in Q3 FY2026, a gain of 6 percentage points, indicating the pace of year-over-year growth is speeding up even from an already high base.",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Revenue discussion, Q3 FY2026 vs Q2 FY2026 year-over-year growth comparison",
+        "original_text": "Revenue was $57.0 billion, up 62% from a year ago and up 22% sequentially."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: Q2 YoY growth 56% → Q3 YoY growth 62% = acceleration of 6pp. Both figures from respective 10-Q filings."
+    },
+    {
+      "id": "q_re_002",
+      "category": "reasoning",
+      "difficulty": "easy",
+      "question": "Meta reported total revenue of $47.52 billion for Q2 2025, an increase of 22% year-over-year. For Q3 2025, Meta reported total revenue of $51.24 billion, an increase of 26% year-over-year. Is Meta's year-over-year revenue growth accelerating or decelerating?",
+      "expected_answer": "Accelerating. The year-over-year revenue growth rate rose from 22% in Q2 2025 to 26% in Q3 2025, an increase of 4 percentage points, indicating growth is picking up pace.",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Q3 2025 financial results overview vs Q2 2025 financial results overview",
+        "original_text": "Total revenue for the third quarter of 2025 was $51.24 billion, an increase of 26% compared to the third quarter of 2024."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: 22% (Q2) → 26% (Q3) = 4pp acceleration. Both figures stated in their respective 10-Q filings."
+    },
+    {
+      "id": "q_re_003",
+      "category": "reasoning",
+      "difficulty": "easy",
+      "question": "Microsoft reported that Azure and other cloud services revenue increased 40% in Q1 FY2026 (three months ended September 30, 2025). In Q2 FY2026 (three months ended December 31, 2025), Azure and other cloud services revenue increased 39%. Is Azure's growth rate accelerating or decelerating?",
+      "expected_answer": "Decelerating. Azure growth slowed from 40% in Q1 FY2026 to 39% in Q2 FY2026, a decline of 1 percentage point, indicating a slight deceleration in growth pace.",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Azure and other cloud services revenue growth, Q1 vs Q2 FY2026",
+        "original_text": "Azure and other cloud services revenue increased 39%."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: 40% (Q1 FY26) → 39% (Q2 FY26) = 1pp deceleration. Q1 from MSFT_10-Q_2025-10-29, Q2 from MSFT_10-Q_2026-01-28."
+    },
+    {
+      "id": "q_re_004",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "NVIDIA's Data Center compute revenue was $33.8 billion in Q2 FY2026, up 50% year-over-year. In Q3 FY2026, Data Center compute revenue was $43.0 billion, up 56% year-over-year. Meanwhile, Data Center networking revenue was $7.3 billion in Q2, up 98% year-over-year, and $8.2 billion in Q3, up 162% year-over-year. Which Data Center sub-segment saw greater growth acceleration from Q2 to Q3?",
+      "expected_answer": "Networking saw greater acceleration. Networking's YoY growth increased by 64 percentage points (98% to 162%), while compute's YoY growth increased by only 6 percentage points (50% to 56%). Networking's acceleration was roughly 10 times larger.",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Data Center compute and networking revenue, Q2 vs Q3 FY2026",
+        "original_text": "Data Center compute revenue was $43.0 billion, up 56% from a year ago and up 27% sequentially. Networking revenue was $8.2 billion, up 162% from a year ago."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: Compute accel = 56%-50% = 6pp. Networking accel = 162%-98% = 64pp. Networking acceleration far greater. All per-period figures from respective 10-Q filings."
+    },
+    {
+      "id": "q_re_005",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "Microsoft reported that its Cloud gross margin percentage decreased to 68% in Q1 FY2026 (three months ended September 30, 2025) and further decreased to 67% in Q2 FY2026 (three months ended December 31, 2025). Both declines were attributed to scaling AI infrastructure and growing AI product usage. Is this margin trend improving or deteriorating, and what does it suggest about the near-term cost dynamics of Microsoft's AI investments?",
+      "expected_answer": "Deteriorating. Cloud gross margin fell from 68% to 67% over two consecutive quarters, indicating that AI infrastructure costs are growing faster than efficiency gains. This suggests Microsoft's heavy AI investment is compressing margins in the near term.",
+      "source": {
+        "document_id": "MSFT_10-Q_2026-01-28",
+        "source_type": "edgar",
+        "ticker": "MSFT",
+        "filing_date": "2026-01-28",
+        "section_hint": "Microsoft Cloud gross margin percentage, Q1 vs Q2 FY2026",
+        "original_text": "Microsoft Cloud gross margin percentage decreased to 67% driven by continued investments in AI infrastructure and growing AI product usage, offset in part by efficiency gains in Azure and Microsoft 365 Commercial cloud."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Trend: 68% (Q1) → 67% (Q2) = 1pp decline over two quarters. Both filings attribute decline to AI infrastructure costs."
+    },
+    {
+      "id": "q_re_006",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "question": "Tesla reported that automotive sales revenue increased $1.53 billion, or 8%, in Q3 2025 compared to Q3 2024. However, for the nine months ended September 30, 2025, automotive sales revenue decreased $4.75 billion, or 9%, compared to the same period in 2024. What does this divergence between the quarterly and year-to-date figures tell us about the trend in Tesla's automotive revenue?",
+      "expected_answer": "Tesla's automotive revenue is recovering. The nine-month decline of 9% reflects weakness in the first half of the year, but the Q3 quarterly increase of 8% indicates a reversal in the second half. The improving quarterly trajectory suggests the earlier downturn may be ending.",
+      "source": {
+        "document_id": "TSLA_10-Q_2025-10-23",
+        "source_type": "edgar",
+        "ticker": "TSLA",
+        "filing_date": "2025-10-23",
+        "section_hint": "Automotive sales revenue, Q3 2025 and nine months ended September 30, 2025",
+        "original_text": "Automotive sales revenue increased $1.53 billion, or 8%, in the three months ended September 30, 2025 as compared to the three months ended September 30, 2024."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Key insight: Q3 alone is +8% YoY while YTD is -9%, meaning H1 was deeply negative. Q3's positive turn indicates recovery."
+    },
+    {
+      "id": "q_re_007",
+      "category": "reasoning",
+      "difficulty": "easy",
+      "question": "Meta's capital expenditures including principal payments on finance leases were $17.01 billion in Q2 2025 and $19.37 billion in Q3 2025. Is Meta's capital spending trend increasing or decreasing?",
+      "expected_answer": "Increasing. Capital expenditures grew from $17.01 billion in Q2 2025 to $19.37 billion in Q3 2025, an increase of $2.36 billion, reflecting continued ramp-up of infrastructure investment.",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Capital expenditures, Q2 2025 vs Q3 2025",
+        "original_text": "Capital expenditures, including principal payments on finance leases, were $19.37 billion for the three months ended September 30, 2025."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: $19.37B - $17.01B = $2.36B increase quarter-over-quarter. Q2 from META_10-Q_2025-07-31, Q3 from META_10-Q_2025-10-30."
+    },
+    {
+      "id": "q_re_008",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "JPMorgan Chase reported that in Q3 2025, net charge-offs were $2.6 billion, up $506 million year-over-year, predominantly driven by Wholesale and Card Services. The net addition to the allowance for credit losses was $810 million. The allowance for credit losses stood at $29.1 billion as of September 30, 2025, with a coverage ratio of 1.88% compared to 1.86% in the prior year. Is JPM's credit quality improving or deteriorating?",
+      "expected_answer": "Deteriorating. Net charge-offs increased $506 million year-over-year, and the firm added $810 million to its loss allowance. The coverage ratio also edged up from 1.86% to 1.88%, indicating JPM expects higher future losses and is building reserves accordingly.",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Credit quality discussion, provision for credit losses, Q3 2025",
+        "original_text": "Net charge-offs of $2.6 billion were up $506 million, predominantly driven by Wholesale and Card Services. The net addition to the allowance for credit losses was $810 million."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Three indicators point to deterioration: rising charge-offs, building allowance, and increasing coverage ratio. All figures from JPM_10-Q_2025-11-04."
+    },
+    {
+      "id": "q_re_009",
+      "category": "reasoning",
+      "difficulty": "easy",
+      "question": "Alphabet reported Q3 2025 revenues of $102.3 billion, with Google Services revenues increasing $10.5 billion, or 14%, and Google Cloud revenues increasing $3.8 billion, or 34%. Which segment is growing faster on a percentage basis, and which contributed more in absolute dollar terms?",
+      "expected_answer": "Google Cloud is growing faster on a percentage basis at 34% versus 14% for Google Services. However, Google Services contributed more in absolute dollars at $10.5 billion versus $3.8 billion for Cloud, reflecting Services' much larger revenue base.",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Revenue overview, three months ended September 30, 2025",
+        "original_text": "Revenues were $102.3 billion, an increase of 16% year over year, primarily driven by an increase in Google Services revenues of $10.5 billion, or 14%, and an increase in Google Cloud revenues of $3.8 billion, or 34%."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Cloud percentage growth (34%) > Services (14%), but Services absolute increase ($10.5B) > Cloud ($3.8B). Both from same 10-Q filing."
+    },
+    {
+      "id": "q_re_010",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "Amazon reported that in Q3 2025, North America sales increased 11%, International sales increased 14%, and AWS sales increased 20%, all compared to Q3 2024. Which of Amazon's three segments grew the fastest, and what does this suggest about the company's growth drivers?",
+      "expected_answer": "AWS grew the fastest at 20%, followed by International at 14% and North America at 11%. This suggests cloud computing remains Amazon's highest-growth segment, outpacing both its domestic and international e-commerce operations by a significant margin.",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Segment sales growth discussion, Q3 2025",
+        "original_text": "AWS sales increased 20% in Q3 2025, and 18% for the nine months ended September 30, 2025 compared to the comparable prior year periods."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Ranking: AWS 20% > International 14% > North America 11%. All three growth rates from AMZN_10-Q_2025-10-31."
+    },
+    {
+      "id": "q_re_011",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "question": "In Q3 2025, Meta's Family of Apps (FoA) segment generated income from operations of $24,967 million with a 49% operating margin, while the Reality Labs (RL) segment reported a loss from operations of $4,432 million. FoA income from operations grew 15% year-over-year while RL's loss was essentially flat (0% change). Given that Meta's consolidated operating income was $20,535 million (40% margin), what does this tell us about the impact of Reality Labs on Meta's overall profitability?",
+      "expected_answer": "Reality Labs significantly drags down Meta's overall profitability. FoA alone has a 49% operating margin, but RL's $4,432 million loss reduces the consolidated margin to 40%, a gap of 9 percentage points. RL consumed roughly 18% of FoA's operating income without generating a profit.",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Segment operating results, FoA vs RL, Q3 2025",
+        "original_text": "FoA income from operations in the three and nine months ended September 30, 2025 increased $3.19 billion, or 15%."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: FoA margin 49% vs consolidated 40% = 9pp drag from RL. RL loss as % of FoA income: $4,432M / $24,967M = ~18%. All from META_10-Q_2025-10-30 segment table."
+    },
+    {
+      "id": "q_re_012",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "In Q3 2025, Tesla's automotive sales revenue increased 8% year-over-year while energy generation and storage revenue increased 44% year-over-year ($1.04 billion increase). Services and other revenue also increased 25% year-over-year ($685 million increase). Which non-automotive segment is growing faster, and how does this compare to the automotive business?",
+      "expected_answer": "Energy generation and storage is growing fastest at 44%, well ahead of Services at 25% and Automotive at 8%. Both non-automotive segments are significantly outpacing the core automotive business, suggesting Tesla's revenue is diversifying away from vehicle sales.",
+      "source": {
+        "document_id": "TSLA_10-Q_2025-10-23",
+        "source_type": "edgar",
+        "ticker": "TSLA",
+        "filing_date": "2025-10-23",
+        "section_hint": "Segment revenue discussion, Q3 2025 year-over-year comparisons",
+        "original_text": "Energy generation and storage revenue increased $1.04 billion, or 44%, in the three months ended September 30, 2025 as compared to the three months ended September 30, 2024."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Growth ranking: Energy 44% > Services 25% > Automotive 8%. All figures from TSLA_10-Q_2025-10-23."
+    },
+    {
+      "id": "q_re_013",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "Amazon's Q4 2025 guidance stated that operating income is expected to be between $21.0 billion and $26.0 billion, compared with $21.2 billion in Q4 2024. At the low end of guidance, would Amazon's operating income improve, decline, or stay roughly flat compared to Q4 2024? What about at the high end?",
+      "expected_answer": "At the low end ($21.0B), operating income would decline slightly by $0.2 billion versus Q4 2024's $21.2B. At the high end ($26.0B), it would increase by $4.8 billion. The guidance range thus spans from a small decline to significant growth, indicating uncertainty in the outlook.",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Fourth Quarter 2025 Guidance, operating income",
+        "original_text": "Operating income is expected to be between $21.0 billion and $26.0 billion, compared with $21.2 billion in fourth quarter 2024."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Low end: $21.0B - $21.2B = -$0.2B (decline). High end: $26.0B - $21.2B = +$4.8B (growth). Both figures from AMZN_10-Q_2025-10-31."
+    },
+    {
+      "id": "q_re_014",
+      "category": "reasoning",
+      "difficulty": "easy",
+      "question": "Amazon's Q4 2025 guidance stated net sales are expected to be between $206.0 billion and $213.0 billion, representing growth of 10% to 13% compared with Q4 2024. The guidance also anticipates a favorable FX impact of approximately 190 basis points. If the FX tailwind were removed, what would the approximate organic growth range be?",
+      "expected_answer": "The approximate organic growth range would be 8.1% to 11.1%. Subtracting the 190 basis point (1.9 percentage point) FX tailwind from both ends: 10% - 1.9% = 8.1% at the low end, and 13% - 1.9% = 11.1% at the high end.",
+      "source": {
+        "document_id": "AMZN_10-Q_2025-10-31",
+        "source_type": "edgar",
+        "ticker": "AMZN",
+        "filing_date": "2025-10-31",
+        "section_hint": "Fourth Quarter 2025 Guidance, net sales and FX impact",
+        "original_text": "Net sales are expected to be between $206.0 billion and $213.0 billion, or to grow between 10% and 13% compared with fourth quarter 2024. This guidance anticipates a favorable impact of approximately 190 basis points from foreign exchange rates."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: 10% - 1.9pp = 8.1% (low). 13% - 1.9pp = 11.1% (high). Both figures from AMZN_10-Q_2025-10-31 guidance section."
+    },
+    {
+      "id": "q_re_015",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "question": "JPMorgan Chase reported Q3 2025 net interest income (NII) of $24.0 billion (up 2%) and noninterest revenue (NIR) of $22.5 billion (up 17%). The NIR figure included a $7.9 billion net gain related to Visa shares. If the Visa gain were excluded, would NIR still have shown growth over the prior year period, given that total NIR was up 17%?",
+      "expected_answer": "It depends on the prior-year NIR base. NIR of $22.5 billion represents a 17% increase, implying prior-year NIR was approximately $19.2 billion. Excluding the $7.9 billion Visa gain, adjusted NIR would be approximately $14.6 billion, which would be a decline of roughly 24% from the prior year. The Visa gain more than accounted for the reported NIR growth.",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Net revenue composition, NII and NIR, Q3 2025; Visa gain impact",
+        "original_text": "Total net revenue included a $7.9 billion net gain related to Visa shares."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: Prior NIR = $22.5B / 1.17 ≈ $19.2B. Adjusted NIR = $22.5B - $7.9B = $14.6B. $14.6B vs $19.2B = decline of ~24%. Visa gain was the primary driver."
+    },
+    {
+      "id": "q_re_016",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "Alphabet reported operating cash flow of $48.4 billion and capital expenditures of $24.0 billion for Q3 2025 (three months ended September 30, 2025). What is the ratio of capex to operating cash flow, and what does this ratio suggest about Alphabet's investment intensity?",
+      "expected_answer": "The capex-to-operating-cash-flow ratio is approximately 50% ($24.0B / $48.4B). This means Alphabet is reinvesting roughly half of its operating cash flow into capital expenditures, primarily technical infrastructure, indicating very high investment intensity typical of companies building out AI infrastructure at scale.",
+      "source": {
+        "document_id": "GOOGL_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "GOOGL",
+        "filing_date": "2025-10-30",
+        "section_hint": "Operating cash flow and capital expenditures, Q3 2025",
+        "original_text": "Operating cash flow was $48.4 billion for the three months ended September 30, 2025. Capital expenditures were $24.0 billion."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: $24.0B / $48.4B = 49.6% ≈ 50%. Both figures from GOOGL_10-Q_2025-10-30."
+    },
+    {
+      "id": "q_re_017",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "question": "Tesla reported operating cash flow of $10.93 billion and capital expenditures of $6.13 billion for the nine months ended September 30, 2025. In the prior year period, operating cash flow was $10.11 billion and capex was $8.56 billion. How did Tesla's implied free cash flow (operating cash flow minus capex) change, and what drove the change?",
+      "expected_answer": "Tesla's implied free cash flow improved significantly, from $1.55 billion ($10.11B - $8.56B) to $4.80 billion ($10.93B - $6.13B), an increase of $3.25 billion. The improvement was primarily driven by a $2.43 billion decrease in capital expenditures, with a smaller $0.82 billion increase in operating cash flow contributing as well.",
+      "source": {
+        "document_id": "TSLA_10-Q_2025-10-23",
+        "source_type": "edgar",
+        "ticker": "TSLA",
+        "filing_date": "2025-10-23",
+        "section_hint": "Cash flows from operating and investing activities, nine months ended September 30, 2025 vs 2024",
+        "original_text": "Our cash flows provided by operating activities were $10.93 billion during the nine months ended September 30, 2025, compared to $10.11 billion during the same period ended September 30, 2024. Capital expenditures amounted to $6.13 billion during the nine months ended September 30, 2025, compared to $8.56 billion during the same period ended September 30, 2024."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "FCF 2025: $10.93B - $6.13B = $4.80B. FCF 2024: $10.11B - $8.56B = $1.55B. Improvement: $4.80B - $1.55B = $3.25B. Capex dropped $2.43B, OCF rose $0.82B."
+    },
+    {
+      "id": "q_re_018",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "Meta reported that headcount was 75,945 as of June 30, 2025 (up 7% year-over-year) and 78,450 as of September 30, 2025 (up 8% year-over-year). Revenue grew 22% in Q2 2025 and 26% in Q3 2025. Is Meta's revenue growing faster or slower than its headcount? What does this suggest about operational efficiency?",
+      "expected_answer": "Revenue is growing much faster than headcount. In Q3 2025, revenue grew 26% while headcount grew 8%, a gap of 18 percentage points. This indicates increasing operational efficiency — Meta is generating significantly more revenue per employee over time, suggesting its investments in AI and automation are improving productivity.",
+      "source": {
+        "document_id": "META_10-Q_2025-10-30",
+        "source_type": "edgar",
+        "ticker": "META",
+        "filing_date": "2025-10-30",
+        "section_hint": "Headcount and revenue growth, Q2 and Q3 2025",
+        "original_text": "Headcount was 78,450 as of September 30, 2025, an increase of 8% year-over-year."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Q3: Revenue growth 26% vs headcount growth 8% = 18pp gap. Q2: 22% vs 7% = 15pp gap. Revenue consistently outpacing headcount."
+    },
+    {
+      "id": "q_re_019",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "question": "NVIDIA disclosed that in Q3 FY2026, four direct customers each accounted for more than 10% of total revenue: Customer A at 22%, Customer B at 15%, Customer C at 13%, and Customer D at 11%. What is the combined revenue concentration from these four customers, and what financial risk does this level of concentration pose?",
+      "expected_answer": "The four customers collectively represent 61% of NVIDIA's total revenue (22% + 15% + 13% + 11%). This extreme concentration poses significant risk — the loss or significant reduction in orders from any single customer could materially impact NVIDIA's financial results. Customer A alone at 22% represents over one-fifth of all revenue.",
+      "source": {
+        "document_id": "NVDA_10-Q_2025-11-19",
+        "source_type": "edgar",
+        "ticker": "NVDA",
+        "filing_date": "2025-11-19",
+        "section_hint": "Customer concentration disclosure, Q3 FY2026",
+        "original_text": "For the third quarter of fiscal year 2026, four direct customers with sales greater than 10% of total revenue included: Customer A at 22%, Customer B at 15%, Customer C at 13%, and Customer D at 11%."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: 22% + 15% + 13% + 11% = 61% total concentration. Over half of revenue from just 4 customers."
+    },
+    {
+      "id": "q_re_020",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "question": "JPMorgan Chase reported Q3 2025 provision for credit losses of $3.4 billion and net charge-offs of $2.6 billion. The provision exceeded actual charge-offs by $810 million, which was added to the allowance for credit losses. What does it mean when a bank's provision for credit losses exceeds its actual charge-offs?",
+      "expected_answer": "When provision exceeds charge-offs, the bank is building reserves because it expects future credit losses to increase. The $810 million excess ($3.4B provision minus $2.6B charge-offs) was added to the allowance, signaling that JPM's management anticipates worsening credit conditions and is proactively reserving capital to absorb expected future losses.",
+      "source": {
+        "document_id": "JPM_10-Q_2025-11-04",
+        "source_type": "edgar",
+        "ticker": "JPM",
+        "filing_date": "2025-11-04",
+        "section_hint": "Provision for credit losses and net charge-offs, Q3 2025",
+        "original_text": "The provision for credit losses was $3.4 billion. Net charge-offs of $2.6 billion were up $506 million. The net addition to the allowance for credit losses was $810 million."
+      },
+      "requires_context": false,
+      "evaluation_type": "reasoning_match",
+      "created_at": "2026-03-24T08:09:27",
+      "notes": "Calculation: $3.4B provision - $2.6B charge-offs = $810M reserve build. Building reserves = expectation of future losses increasing."
+    }
+  ],
+  "category_counts": {
+    "factual_extraction": 30,
+    "sentiment": 30,
+    "structured_output": 20,
+    "reasoning": 20
+  },
+  "source_documents": [
+    "AMZN_10-Q_2025-10-31",
+    "GOOGL_10-Q_2025-10-30",
+    "JPM_10-Q_2025-11-04",
+    "META_10-Q_2025-10-30",
+    "MSFT_10-Q_2026-01-28",
+    "NFLX_10-Q_2025-10-22",
+    "NVDA_10-Q_2025-11-19",
+    "TSLA_10-Q_2025-10-23",
+    "financial_phrasebank"
+  ],
+  "description": "Financial Fine-Tuning Laboratory eval set v1.0. Ground truth sourced from real SEC 10-Q filings and expert-labeled FinancialPhraseBank dataset."
+}
