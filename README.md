@@ -7,6 +7,12 @@
 
 A head-to-head benchmark of **6 LLM approaches** on **100 curated financial questions**: zero-shot, few-shot, chain-of-thought, RAG, SFT fine-tuned, and DPO-aligned. The project answers *when* fine-tuning a small open-weight model (Mistral-7B with QLoRA) beats prompt engineering and retrieval — and when it doesn't.
 
+## Demo
+
+[![Watch the demo](assets/homescreen.png)](https://youtu.be/GUC874kID80)
+
+▶ [Watch on YouTube](https://youtu.be/GUC874kID80)
+
 ---
 
 ## Benchmark Results
