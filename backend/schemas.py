@@ -26,7 +26,7 @@ class QuestionRequest(BaseModel):
         description="Approaches to run. Valid: zero_shot, few_shot, cot, rag, sft, dpo.",
     )
     timeout_seconds: int = Field(
-        default=30,
+        default=90,
         description="Per-approach timeout in seconds.",
     )
 

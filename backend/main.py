@@ -220,7 +220,9 @@ async def run_all(request: QuestionRequest) -> MultiApproachResponse:
         request.question,
     )
 
-    async def _run_one(name: str) -> ApproachResponse:
+    async def _run_one(name: str, stagger_secs: float = 0.0) -> ApproachResponse:
+        if stagger_secs:
+            await asyncio.sleep(stagger_secs)
         try:
             approach = get_approach(name)
             loop = asyncio.get_event_loop()
@@ -260,7 +262,8 @@ async def run_all(request: QuestionRequest) -> MultiApproachResponse:
                 metadata={},
             )
 
-    tasks = [_run_one(name) for name in request.approaches]
+    # Stagger requests by 1.5 s each to avoid simultaneous free-tier 429s.
+    tasks = [_run_one(name, stagger_secs=i * 1.5) for i, name in enumerate(request.approaches)]
     results = await asyncio.gather(*tasks)
 
     total_latency = (time.perf_counter() - start) * 1000

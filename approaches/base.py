@@ -12,11 +12,12 @@ define how the question is packaged into chat messages.
 """
 
 import logging
+import random
 import time
 from abc import ABC, abstractmethod
 from datetime import datetime, timezone
 
-from groq import Groq
+from groq import Groq, RateLimitError
 from pydantic import BaseModel
 
 from config import settings
@@ -85,6 +86,46 @@ class BaseApproach(ABC):
             ``[{"role": "system", "content": "..."}, ...]``
         """
 
+    # ── groq call with retry ──────────────────────────────────────────
+
+    def _call_groq(
+        self,
+        messages: list[dict],
+        max_tokens: int = 512,
+        max_retries: int = 3,
+    ):
+        """Call Groq with exponential-backoff retry on rate-limit errors.
+
+        Args:
+            messages: Chat messages for the Groq API.
+            max_tokens: Maximum tokens in the completion.
+            max_retries: Number of retries on RateLimitError (429).
+
+        Returns:
+            The Groq chat completion response object.
+        """
+        for attempt in range(max_retries + 1):
+            try:
+                return self.client.chat.completions.create(
+                    model=self.model,
+                    messages=messages,
+                    temperature=0.1,
+                    max_tokens=max_tokens,
+                )
+            except RateLimitError:
+                if attempt < max_retries:
+                    wait = (2 ** attempt) + random.uniform(0, 1)
+                    self._log.warning(
+                        "%s | rate-limited, retry %d/%d in %.1fs",
+                        self.approach_name,
+                        attempt + 1,
+                        max_retries,
+                        wait,
+                    )
+                    time.sleep(wait)
+                else:
+                    raise
+
     # ── public API ────────────────────────────────────────────────────
 
     def run(self, question: str) -> ApproachResult:
@@ -101,13 +142,7 @@ class BaseApproach(ABC):
 
         try:
             messages = self._build_prompt(question)
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                temperature=0.1,
-                max_tokens=512,
-            )
-
+            response = self._call_groq(messages)
             answer = response.choices[0].message.content or ""
             usage = response.usage
             tokens_in = usage.prompt_tokens if usage else 0

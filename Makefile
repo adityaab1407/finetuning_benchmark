@@ -6,7 +6,7 @@ VENV       := .finetune_env
 ACTIVATE   := source $(VENV)/bin/activate &&
 PYTHON     := $(ACTIVATE) python3
 
-.PHONY: setup data benchmark train serve app docker test clean lint format help
+.PHONY: setup data benchmark train serve app docker docker-down test clean lint format help
 
 ## setup        : Install dependencies and prepare .env
 setup:
@@ -61,9 +61,13 @@ app:
 		--server.port 8501; \
 	wait
 
-## docker       : Build and start all services via Docker Compose
+## docker       : Build and start all services via Docker Compose (v2)
 docker:
-	docker-compose up --build
+	docker compose up --build
+
+## docker-down  : Stop and remove Docker Compose services
+docker-down:
+	docker compose down
 
 ## test         : Run pytest test suite
 test:

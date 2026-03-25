@@ -19,24 +19,30 @@ from approaches.base import ApproachResult, BaseApproach
 from config import settings
 
 _SYSTEM_PROMPT = (
-    "You are a financial analyst assistant. For every question, "
-    "follow this exact reasoning process:\n\n"
-    "STEP 1 - UNDERSTAND: Identify what type of question this is "
-    "(factual lookup, sentiment classification, data extraction, "
-    "or reasoning) and what exactly is being asked.\n\n"
-    "STEP 2 - ANALYZE: Work through the relevant information "
-    "carefully. For factual questions, identify the specific "
-    "metric and time period. For sentiment, identify the key "
-    "phrases that signal tone. For JSON extraction, identify "
-    "each field and its value. For reasoning, lay out the "
-    "relevant figures and the logical steps.\n\n"
-    "STEP 3 - ANSWER: Provide your final answer in the correct "
-    "format. For factual: the specific figure. For sentiment: "
-    "exactly one word (positive/negative/neutral). For JSON: "
-    "valid JSON only. For reasoning: conclusion followed by "
-    "brief explanation.\n\n"
-    "Always end with:\n"
-    "FINAL ANSWER: [your answer here]"
+    "You are a senior financial analyst. You reason carefully before answering.\n\n"
+    "For every question, follow this exact three-step process:\n\n"
+    "## STEP 1 — UNDERSTAND\n"
+    "State the question type: factual lookup | trend analysis | sentiment | "
+    "ratio/calculation | comparison. Identify the specific metric, company, "
+    "and time period being asked about.\n\n"
+    "## STEP 2 — ANALYZE\n"
+    "Work through the evidence:\n"
+    "- For factual: locate the exact figure and its reporting period.\n"
+    "- For trend/analysis: list the data points in chronological order, "
+    "compute direction (improving = rising metrics that are good, or falling "
+    "costs/losses; deteriorating = the opposite). State whether the change is "
+    "material (>1 pp is significant for margins).\n"
+    "- For sentiment: quote the key phrases that signal tone, then weigh them.\n"
+    "- For calculation: show each arithmetic step explicitly.\n\n"
+    "## STEP 3 — ANSWER\n"
+    "Give a concise, precise answer:\n"
+    "- Factual: the exact figure with units.\n"
+    "- Trend: one of 'improving' or 'deteriorating', followed by one sentence "
+    "of justification.\n"
+    "- Sentiment: exactly one word (positive / negative / neutral).\n"
+    "- Calculation: the result with units.\n\n"
+    "Always close your response with exactly this line (no extra text after it):\n"
+    "FINAL ANSWER: <your concise answer>"
 )
 
 
@@ -60,7 +66,7 @@ class ChainOfThoughtApproach(BaseApproach):
         """
         user_content = (
             f"Question: {question}\n\n"
-            "Please work through this step by step:"
+            "Work through STEP 1, STEP 2, and STEP 3, then end with FINAL ANSWER:"
         )
         return [
             {"role": "system", "content": _SYSTEM_PROMPT},
@@ -107,12 +113,8 @@ class ChainOfThoughtApproach(BaseApproach):
 
         try:
             messages = self._build_prompt(question)
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                temperature=0.1,
-                max_tokens=512,
-            )
+            # Use shared retry helper; 1024 tokens to allow full reasoning chain.
+            response = self._call_groq(messages, max_tokens=1024)
 
             raw_answer = response.choices[0].message.content or ""
             final_answer = self.extract_final_answer(raw_answer)

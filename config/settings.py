@@ -75,7 +75,7 @@ class Settings(BaseSettings):
     OLLAMA_BASE_URL: str = "http://localhost:11434"
     OLLAMA_MODEL_NAME: str = "mistral-financial"
     FASTAPI_HOST: str = "0.0.0.0"
-    FASTAPI_PORT: int = 8000
+    FASTAPI_PORT: int = 8083
 
     # ── OBSERVABILITY ─────────────────────────────────────────────────
     LANGFUSE_PUBLIC_KEY: str = ""

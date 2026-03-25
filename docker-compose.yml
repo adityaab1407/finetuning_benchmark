@@ -15,17 +15,22 @@ services:
       dockerfile: Dockerfile.backend
     env_file: .env
     ports:
-      - "8000:8000"
+      - "8083:8083"
     volumes:
-      # Persist ChromaDB and processed data between restarts
-      - ./data:/app/data
+      # Named volume keeps ChromaDB inside Docker (avoids host version mismatch)
+      - chroma_data:/app/data/chroma_db
+      # Mount processed source data and results as host bind-mounts
+      - ./data/processed:/app/data/processed:ro
+      - ./data/raw:/app/data/raw:ro
+      - ./data/eval_set:/app/data/eval_set:ro
+      - ./data/synthetic:/app/data/synthetic
       - ./evaluation/results:/app/evaluation/results
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      test: ["CMD", "curl", "-f", "http://localhost:8083/health"]
       interval: 30s
       timeout: 10s
-      retries: 3
-      start_period: 20s
+      retries: 5
+      start_period: 120s
     restart: unless-stopped
 
   # ── Streamlit frontend ─────────────────────────────────────────────
@@ -37,9 +42,9 @@ services:
     environment:
       # Override API base so the Streamlit server reaches the backend
       # container by its service name, not localhost.
-      API_BASE_URL: "http://backend:8000"
+      API_BASE_URL: "http://backend:8083"
     ports:
-      - "8501:8501"
+      - "8503:8503"
     volumes:
       # Read pre-computed benchmark results from the shared volume
       - ./evaluation/results:/app/evaluation/results
@@ -61,3 +66,4 @@ services:
 
 volumes:
   ollama_models:
+  chroma_data:
