@@ -51,3 +51,4 @@ Thumbs.db
 #   data/synthetic/prompts/ — versioned generation prompts
 #   notebooks/              — Kaggle training notebooks
 # ──────────────────────────────────────────────────────────────────────
+data/chroma_db/

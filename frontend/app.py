@@ -609,7 +609,7 @@ with tab_demo:
     # Simple text area — no dropdown
     question = st.text_area(
         "Type your question here:",
-        value="What was Meta Platforms' headcount as of September 30, 2025?",
+        value="How much remained available under Microsoft's $60.0 billion share repurchase program approved on September 16, 2024",
         height=80,
         key="question_input",
     )
