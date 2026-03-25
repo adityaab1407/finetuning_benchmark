@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environment
+.finetune_env/
+venv/
+.venv/
+env/
+
+# Secrets / environment
+.env
+
+# Training artefacts & model weights (very large — use volumes or HF hub)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+training/outputs/
+
+# Notebooks checkpoints
+notebooks/.ipynb_checkpoints/
+
+# Git
+.git/
+.gitignore
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build / dist
+dist/
+build/
+*.egg-info/

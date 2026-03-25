@@ -9,6 +9,7 @@ pre-computed benchmark data.
 import glob
 import json
 import logging
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -19,7 +20,9 @@ import streamlit as st
 
 logger = logging.getLogger(__name__)
 
-API_BASE = "http://localhost:8000"
+# Configurable via API_BASE_URL env var so the Docker frontend container
+# can reach the backend service by its compose service name.
+API_BASE = os.environ.get("API_BASE_URL", "http://localhost:8000")
 USD_TO_INR = 83.5
 
 APPROACH_COLORS = {

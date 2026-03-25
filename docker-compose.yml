@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────────────────────────────────
+# Financial Fine-Tuning Laboratory — Docker Compose
+# ──────────────────────────────────────────────────────────────────────
+# Usage:
+#   docker compose up --build           # start backend + frontend
+#   docker compose --profile ollama up  # also start local Ollama server
+# ──────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── FastAPI backend ────────────────────────────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist ChromaDB and processed data between restarts
+      - ./data:/app/data
+      - ./evaluation/results:/app/evaluation/results
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+
+  # ── Streamlit frontend ─────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    env_file: .env
+    environment:
+      # Override API base so the Streamlit server reaches the backend
+      # container by its service name, not localhost.
+      API_BASE_URL: "http://backend:8000"
+    ports:
+      - "8501:8501"
+    volumes:
+      # Read pre-computed benchmark results from the shared volume
+      - ./evaluation/results:/app/evaluation/results
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ── Ollama local inference (optional — activate with --profile ollama)
+  ollama:
+    image: ollama/ollama:latest
+    profiles:
+      - ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_models:
