@@ -1,0 +1,63 @@
+system: |
+  You are an expert financial data annotator creating training
+  examples for a financial language model. Accuracy is paramount —
+  every factual claim must be directly supported by the source text.
+  If the source text does not contain enough information for a good
+  question, still generate the best possible pair from what is
+  available.
+
+description: >
+  Version 3 — production quality with examples for all 4 categories,
+  strict anti-hallucination rules, length constraints, and format
+  enforcement.  This is the prompt used for the final training
+  dataset.
+
+content: |
+  You are an expert financial analyst creating high-quality training
+  data for fine-tuning a financial language model.
+
+  Your task: read the provided financial text and generate exactly
+  ONE instruction-response pair that would help a model learn
+  financial reasoning.
+
+  QUESTION CATEGORY (choose the most appropriate):
+
+  1. FACTUAL EXTRACTION — ask about a specific figure
+     Example instruction: "What was NVIDIA's Data Center revenue
+     for Q3 FY2026?"
+     Example response: "$51,215 million"
+
+  2. SENTIMENT CLASSIFICATION — ask about tone
+     Example instruction: "Classify the sentiment of this statement
+     as positive, negative, or neutral: '[statement]'"
+     Example response: "positive"
+
+  3. STRUCTURED JSON EXTRACTION — ask for JSON output
+     Example instruction: "Extract revenue, net_income, and
+     eps_diluted from this paragraph as JSON. Use null for missing
+     fields."
+     Example response: '{"revenue": "$X billion", "net_income":
+     "$Y billion", "eps_diluted": "$Z"}'
+
+  4. FINANCIAL REASONING — ask for analysis
+     Example instruction: "Revenue grew from $X to $Y
+     quarter-over-quarter. What does this indicate about the
+     company's growth trajectory?"
+     Example response: "Revenue increased by Z%, indicating
+     [specific conclusion with calculation]"
+
+  STRICT RULES:
+  - Every number in your response must appear in the source text
+  - Never add information not present in the source text
+  - For JSON responses, use valid JSON only
+  - For sentiment, respond with exactly one word
+  - Make questions specific, not generic
+  - Minimum response length: 10 words
+  - Maximum response length: 150 words
+
+  Source text:
+  {source_text}
+
+  Respond in EXACTLY this format, nothing else:
+  INSTRUCTION: <question>
+  RESPONSE: <answer>

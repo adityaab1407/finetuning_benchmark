@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-03-25T08:56:02.494093+00:00",
+  "versions": {
+    "v2": {
+      "total_pairs": 56,
+      "avg_instruction_length": 102.3,
+      "avg_response_length": 56.0,
+      "category_distribution": {
+        "factual": 49,
+        "sentiment": 0,
+        "structured": 2,
+        "reasoning": 5,
+        "unknown": 0
+      },
+      "quality_score_histogram": {
+        "0.0-0.5": 0,
+        "0.5-0.65": 0,
+        "0.65-0.8": 10,
+        "0.8-1.0": 46
+      },
+      "pass_rate_pct": 100.0
+    }
+  },
+  "final_sft_count": 56,
+  "final_dpo_count": 56,
+  "recommendation": "v2 selected for training: highest pass rate and quality scores"
+}

@@ -1,0 +1,562 @@
+[
+  {
+    "id": "sft_0001",
+    "instruction": "What is the amount of manufacturing purchase obligations payable within 12 months as of June 28, 2025?",
+    "input": "",
+    "output": "$43.8 billion",
+    "source_ticker": "AAPL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the amount of manufacturing purchase obligations payable within 12 months as of June 28, 2025? [/INST] $43.8 billion</s>"
+  },
+  {
+    "id": "sft_0002",
+    "instruction": "What is the one dark spot on the horizon mentioned in the text?",
+    "input": "",
+    "output": "The company's performance in the Finnish bottled water market.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the one dark spot on the horizon mentioned in the text? [/INST] The company's performance in the Finnish bottled water market.</s>"
+  },
+  {
+    "id": "sft_0003",
+    "instruction": "What is the total carrying value of senior unsecured notes outstanding as of June 30, 2025?",
+    "input": "",
+    "output": "$24.6 billion",
+    "source_ticker": "GOOGL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the total carrying value of senior unsecured notes outstanding as of June 30, 2025? [/INST] $24.6 billion</s>"
+  },
+  {
+    "id": "sft_0004",
+    "instruction": "What was the percentage increase in sales for the Foundries division and the Machine Shop division, and what were their respective sales in EUR million?",
+    "input": "",
+    "output": "{\"Foundries\": {\"percentage increase\": 9.7, \"sales\": 63.1}, \"Machine Shop\": {\"percentage increase\": 16.4, \"sales\": 41.2}}",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the percentage increase in sales for the Foundries division and the Machine Shop division, and what were their respective sales in EUR million? [/INST] {\"Foundries\": {\"percentage increase\": 9.7, \"sales\": 63.1}, \"Machine Shop\": {\"percentage increase\": 16.4, \"sales\": 41.2}}</s>"
+  },
+  {
+    "id": "sft_0005",
+    "instruction": "What was the total amount returned to shareholders in the form of share repurchases and dividends in the first quarter of fiscal year 2026?",
+    "input": "",
+    "output": "$10.7 billion",
+    "source_ticker": "MSFT",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the total amount returned to shareholders in the form of share repurchases and dividends in the first quarter of fiscal year 2026? [/INST] $10.7 billion</s>"
+  },
+  {
+    "id": "sft_0006",
+    "instruction": "What were the capital expenditures for the six months ended June 30, 2024 and 2025?",
+    "input": "",
+    "output": "$25.2 billion and $39.6 billion, respectively.",
+    "source_ticker": "GOOGL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What were the capital expenditures for the six months ended June 30, 2024 and 2025? [/INST] $25.2 billion and $39.6 billion, respectively.</s>"
+  },
+  {
+    "id": "sft_0007",
+    "instruction": "What was the special assessment accrual recorded in Corporate in the first quarter of 2025?",
+    "input": "",
+    "output": "$323 million",
+    "source_ticker": "JPM",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the special assessment accrual recorded in Corporate in the first quarter of 2025? [/INST] $323 million</s>"
+  },
+  {
+    "id": "sft_0008",
+    "instruction": "What is a factor that may inhibit the company's ability to adequately staff its research and development efforts, according to the text?",
+    "input": "",
+    "output": "Restraints on the flow of technical and professional talent, including those derived from changes to U.S. immigration policies or laws.",
+    "source_ticker": "MSFT",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is a factor that may inhibit the company's ability to adequately staff its research and development efforts, according to the text? [/INST] Restraints on the flow of technical and professional talent, including those derived from changes to U.S. immigration policies or laws.</s>"
+  },
+  {
+    "id": "sft_0009",
+    "instruction": "What is the total amount by which changes in foreign exchange rates positively impacted operating income for Q2 2025 and the six months ended June 30, 2025?",
+    "input": "",
+    "output": "$620 million ($338 million for Q2 2025 and $282 million for six months ended June 30, 2025)",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the total amount by which changes in foreign exchange rates positively impacted operating income for Q2 2025 and the six months ended June 30, 2025? [/INST] $620 million ($338 million for Q2 2025 and $282 million for six months ended June 30, 2025)</s>"
+  },
+  {
+    "id": "sft_0010",
+    "instruction": "What were the shipping costs for the six months ended June 30, 2024 and 2025?",
+    "input": "",
+    "output": "$43.8 billion and $45.9 billion",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What were the shipping costs for the six months ended June 30, 2024 and 2025? [/INST] $43.8 billion and $45.9 billion</s>"
+  },
+  {
+    "id": "sft_0011",
+    "instruction": "What is the total amount authorized by the Board of Directors for the repurchase of common stock?",
+    "input": "",
+    "output": "$25 billion",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the total amount authorized by the Board of Directors for the repurchase of common stock? [/INST] $25 billion</s>"
+  },
+  {
+    "id": "sft_0012",
+    "instruction": "What types of expenses are included in the infrastructure costs mentioned in the text?",
+    "input": "",
+    "output": "Infrastructure costs include servers, networking equipment, and data center related depreciation and amortization, rent, utilities, and other expenses necessary to support AWS and other Amazon businesses.",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What types of expenses are included in the infrastructure costs mentioned in the text? [/INST] Infrastructure costs include servers, networking equipment, and data center related depreciation and amortization, rent, utilities, and other expenses necessary to support AWS and other Amazon businesses.</s>"
+  },
+  {
+    "id": "sft_0013",
+    "instruction": "What was the increase in operating margin for the three months ended June 30, 2025, compared to the prior comparative period?",
+    "input": "",
+    "output": "approximately seven percentage points",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "reasoning",
+    "text": "<s>[INST] What was the increase in operating margin for the three months ended June 30, 2025, compared to the prior comparative period? [/INST] approximately seven percentage points</s>"
+  },
+  {
+    "id": "sft_0014",
+    "instruction": "What is the main goal stated in the given financial text?",
+    "input": "",
+    "output": "The main goal is to understand different traffic patterns based on the use of each building.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the main goal stated in the given financial text? [/INST] The main goal is to understand different traffic patterns based on the use of each building.</s>"
+  },
+  {
+    "id": "sft_0015",
+    "instruction": "What is the par value per share of the common stock of Microsoft Corporation?",
+    "input": "",
+    "output": "$0.00000625",
+    "source_ticker": "MSFT",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the par value per share of the common stock of Microsoft Corporation? [/INST] $0.00000625</s>"
+  },
+  {
+    "id": "sft_0016",
+    "instruction": "What is the approximate reduction in network building costs for the UMTS900 solution compared to 3.5 G networks?",
+    "input": "",
+    "output": "One-third lower",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "reasoning",
+    "text": "<s>[INST] What is the approximate reduction in network building costs for the UMTS900 solution compared to 3.5 G networks? [/INST] One-third lower</s>"
+  },
+  {
+    "id": "sft_0017",
+    "instruction": "What was the increase in FoA revenue in the three months ended June 30, 2025, compared to the same period in 2024?",
+    "input": "",
+    "output": "$8.43 billion, or 22%",
+    "source_ticker": "META",
+    "prompt_version": "v2",
+    "category": "reasoning",
+    "text": "<s>[INST] What was the increase in FoA revenue in the three months ended June 30, 2025, compared to the same period in 2024? [/INST] $8.43 billion, or 22%</s>"
+  },
+  {
+    "id": "sft_0018",
+    "instruction": "What is the one dark spot on the horizon mentioned in the text?",
+    "input": "",
+    "output": "The company's performance in the Finnish bottled water market.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the one dark spot on the horizon mentioned in the text? [/INST] The company's performance in the Finnish bottled water market.</s>"
+  },
+  {
+    "id": "sft_0019",
+    "instruction": "What is the date of the end of the nine-month period for the data in the provided table for 2024?",
+    "input": "",
+    "output": "June 29, 2024",
+    "source_ticker": "AAPL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the date of the end of the nine-month period for the data in the provided table for 2024? [/INST] June 29, 2024</s>"
+  },
+  {
+    "id": "sft_0020",
+    "instruction": "What was the aggregate principal amount of the Euro-denominated fixed-rate senior notes issued in May 2025?",
+    "input": "",
+    "output": "\u20ac3.5 billion ($3.9 billion)",
+    "source_ticker": "V",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the aggregate principal amount of the Euro-denominated fixed-rate senior notes issued in May 2025? [/INST] \u20ac3.5 billion ($3.9 billion)</s>"
+  },
+  {
+    "id": "sft_0021",
+    "instruction": "What are the main components of the R&D expenses, as mentioned in the text?",
+    "input": "",
+    "output": "The main components of our R&D expenses are: employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.",
+    "source_ticker": "GOOGL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What are the main components of the R&D expenses, as mentioned in the text? [/INST] The main components of our R&D expenses are: employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.</s>"
+  },
+  {
+    "id": "sft_0022",
+    "instruction": "What type of operations are mentioned in the text as being voice-directed?",
+    "input": "",
+    "output": "Voice-directed operations",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What type of operations are mentioned in the text as being voice-directed? [/INST] Voice-directed operations</s>"
+  },
+  {
+    "id": "sft_0023",
+    "instruction": "What was the amount of foreign exchange losses, net of the impacts of derivatives and hedging, in the six months ended June 30, 2025?",
+    "input": "",
+    "output": "$72 million",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the amount of foreign exchange losses, net of the impacts of derivatives and hedging, in the six months ended June 30, 2025? [/INST] $72 million</s>"
+  },
+  {
+    "id": "sft_0024",
+    "instruction": "What are the financing obligations for Q2 2024 and Q2 2025 as mentioned in the text?",
+    "input": "",
+    "output": "$5.0 billion for Q2 2024 and $4.6 billion for Q2 2025.",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What are the financing obligations for Q2 2024 and Q2 2025 as mentioned in the text? [/INST] $5.0 billion for Q2 2024 and $4.6 billion for Q2 2025.</s>"
+  },
+  {
+    "id": "sft_0025",
+    "instruction": "What was the total amount spent on common stock repurchases for the nine months ended June 30, 2025?",
+    "input": "",
+    "output": "$13.2 billion",
+    "source_ticker": "V",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the total amount spent on common stock repurchases for the nine months ended June 30, 2025? [/INST] $13.2 billion</s>"
+  },
+  {
+    "id": "sft_0026",
+    "instruction": "What is the par value per share of the common stock of Microsoft Corporation?",
+    "input": "",
+    "output": "$0.00000625",
+    "source_ticker": "MSFT",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the par value per share of the common stock of Microsoft Corporation? [/INST] $0.00000625</s>"
+  },
+  {
+    "id": "sft_0027",
+    "instruction": "Who is the analyst quoted in the text as discussing NAVTEQ's lead in installed map data systems?",
+    "input": "",
+    "output": "Phil Magney of Telematics Research Group",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] Who is the analyst quoted in the text as discussing NAVTEQ's lead in installed map data systems? [/INST] Phil Magney of Telematics Research Group</s>"
+  },
+  {
+    "id": "sft_0028",
+    "instruction": "What is the size of the building where Kesko offers Hilton to open a hotel?",
+    "input": "",
+    "output": "18,000 square metres",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the size of the building where Kesko offers Hilton to open a hotel? [/INST] 18,000 square metres</s>"
+  },
+  {
+    "id": "sft_0029",
+    "instruction": "Who, according to the text, said that fair play required extending the same deregulatory rules to the digital subscriber lines that telecom providers use for broadband networks?",
+    "input": "",
+    "output": "FCC Chairman Kevin Martin",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] Who, according to the text, said that fair play required extending the same deregulatory rules to the digital subscriber lines that telecom providers use for broadband networks? [/INST] FCC Chairman Kevin Martin</s>"
+  },
+  {
+    "id": "sft_0030",
+    "instruction": "What is the reason for the increase in Litigation provision over the three-month prior-year comparable period?",
+    "input": "",
+    "output": "The increase in Litigation provision is primarily due to higher accruals related to the U.S. covered litigation.",
+    "source_ticker": "V",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the reason for the increase in Litigation provision over the three-month prior-year comparable period? [/INST] The increase in Litigation provision is primarily due to higher accruals related to the U.S. covered litigation.</s>"
+  },
+  {
+    "id": "sft_0031",
+    "instruction": "In which country is the Amsterdam office located where the workforce will be reduced?",
+    "input": "",
+    "output": "The Netherlands",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] In which country is the Amsterdam office located where the workforce will be reduced? [/INST] The Netherlands</s>"
+  },
+  {
+    "id": "sft_0032",
+    "instruction": "What accounting method is primarily used for valuing inventories, and how are they valued?",
+    "input": "",
+    "output": "The first-in first-out method, and they are valued at the lower of cost and net realizable value.",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What accounting method is primarily used for valuing inventories, and how are they valued? [/INST] The first-in first-out method, and they are valued at the lower of cost and net realizable value.</s>"
+  },
+  {
+    "id": "sft_0033",
+    "instruction": "What is the date of the end of the three- and nine-month periods for the 2024 fiscal year mentioned in the text?",
+    "input": "",
+    "output": "June 29, 2024",
+    "source_ticker": "AAPL",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the date of the end of the three- and nine-month periods for the 2024 fiscal year mentioned in the text? [/INST] June 29, 2024</s>"
+  },
+  {
+    "id": "sft_0034",
+    "instruction": "What was the amount of noninterest expense, and what was the percentage increase in noninterest expense?",
+    "input": "",
+    "output": "$9.9 billion, up 5%",
+    "source_ticker": "JPM",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the amount of noninterest expense, and what was the percentage increase in noninterest expense? [/INST] $9.9 billion, up 5%</s>"
+  },
+  {
+    "id": "sft_0035",
+    "instruction": "What is the assessment of Trygvesta's ability to acquire the entire unit, according to Bosse?",
+    "input": "",
+    "output": "Trygvesta does not have the financial strength to acquire the entire unit.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the assessment of Trygvesta's ability to acquire the entire unit, according to Bosse? [/INST] Trygvesta does not have the financial strength to acquire the entire unit.</s>"
+  },
+  {
+    "id": "sft_0036",
+    "instruction": "What was the amount paid by Facebook as part of the settlement agreement to resolve the lawsuit related to consumer privacy user profile litigation?",
+    "input": "",
+    "output": "$725 million",
+    "source_ticker": "META",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the amount paid by Facebook as part of the settlement agreement to resolve the lawsuit related to consumer privacy user profile litigation? [/INST] $725 million</s>"
+  },
+  {
+    "id": "sft_0037",
+    "instruction": "What are the financing obligations for Q2 2024 and Q2 2025?",
+    "input": "",
+    "output": "$5.0 billion and $4.6 billion respectively.",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What are the financing obligations for Q2 2024 and Q2 2025? [/INST] $5.0 billion and $4.6 billion respectively.</s>"
+  },
+  {
+    "id": "sft_0038",
+    "instruction": "Who supports quitting and pays part of the cost of nicotine treatments, according to the text?",
+    "input": "",
+    "output": "The employer, together with health personnel.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] Who supports quitting and pays part of the cost of nicotine treatments, according to the text? [/INST] The employer, together with health personnel.</s>"
+  },
+  {
+    "id": "sft_0039",
+    "instruction": "What was the provision for credit losses in the prior year, according to the text?",
+    "input": "",
+    "output": "$4.6 billion",
+    "source_ticker": "JPM",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the provision for credit losses in the prior year, according to the text? [/INST] $4.6 billion</s>"
+  },
+  {
+    "id": "sft_0040",
+    "instruction": "What is the worth of the contract in euros?",
+    "input": "",
+    "output": "EUR 1 million",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the worth of the contract in euros? [/INST] EUR 1 million</s>"
+  },
+  {
+    "id": "sft_0041",
+    "instruction": "What is the primary reason for the increase in sales and marketing costs in Q2 2025 and for the six months ended June 30, 2025, compared to the comparable prior year periods?",
+    "input": "",
+    "output": "Increased advertising expenses, partially offset by decreased payroll and related expenses for personnel engaged in marketing and selling activities.",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "reasoning",
+    "text": "<s>[INST] What is the primary reason for the increase in sales and marketing costs in Q2 2025 and for the six months ended June 30, 2025, compared to the comparable prior year periods? [/INST] Increased advertising expenses, partially offset by decreased payroll and related expenses for personnel engaged in marketing and selling activities.</s>"
+  },
+  {
+    "id": "sft_0042",
+    "instruction": "What is the total amount of common stock authorized for repurchase by the Board of Directors?",
+    "input": "",
+    "output": "$25 billion",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the total amount of common stock authorized for repurchase by the Board of Directors? [/INST] $25 billion</s>"
+  },
+  {
+    "id": "sft_0043",
+    "instruction": "What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition?",
+    "input": "",
+    "output": "They will considerably increase.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition? [/INST] They will considerably increase.</s>"
+  },
+  {
+    "id": "sft_0044",
+    "instruction": "What are the dimensions of Mega Image's logistics center in terms of length and height?",
+    "input": "",
+    "output": "The logistics center will be 347 metres in length and 12 metres in height.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What are the dimensions of Mega Image's logistics center in terms of length and height? [/INST] The logistics center will be 347 metres in length and 12 metres in height.</s>"
+  },
+  {
+    "id": "sft_0045",
+    "instruction": "What is the year and month mentioned in the text as the end period for the comparison of revenues?",
+    "input": "",
+    "output": "2025, June 30",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the year and month mentioned in the text as the end period for the comparison of revenues? [/INST] 2025, June 30</s>"
+  },
+  {
+    "id": "sft_0046",
+    "instruction": "What was the increase in expenses incurred in connection with the advertising offering for the six months ended June 30, 2025, as compared to the six months ended June 30, 2024?",
+    "input": "",
+    "output": "$42 million",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "reasoning",
+    "text": "<s>[INST] What was the increase in expenses incurred in connection with the advertising offering for the six months ended June 30, 2025, as compared to the six months ended June 30, 2024? [/INST] $42 million</s>"
+  },
+  {
+    "id": "sft_0047",
+    "instruction": "What was the net gain related to Visa shares recorded in the prior year?",
+    "input": "",
+    "output": "$7.9 billion",
+    "source_ticker": "JPM",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the net gain related to Visa shares recorded in the prior year? [/INST] $7.9 billion</s>"
+  },
+  {
+    "id": "sft_0048",
+    "instruction": "Who is the Finnair spokesman mentioned in the text?",
+    "input": "",
+    "output": "Usko Maatta",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] Who is the Finnair spokesman mentioned in the text? [/INST] Usko Maatta</s>"
+  },
+  {
+    "id": "sft_0049",
+    "instruction": "In what month and year was clothing chain Lindex included in the Group?",
+    "input": "",
+    "output": "December 2007",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] In what month and year was clothing chain Lindex included in the Group? [/INST] December 2007</s>"
+  },
+  {
+    "id": "sft_0050",
+    "instruction": "What factors could affect the company's effective tax rates, and what is the potential outcome of developments in an audit, investigation, or other tax controversy, as stated in the text, in JSON format?",
+    "input": "",
+    "output": "{\"factors_affecting_tax_rates\": [\"changes in business operations\", \"acquisitions\", \"investments\", \"entry into new businesses and geographies\", \"intercompany transactions\", \"relative amount of foreign earnings\", \"losses incurred in jurisdictions\", \"applicability of special tax regimes\", \"changes in foreign exchange rates\", \"changes in stock price\", \"changes to forecasts of income and loss\", \"changes in deferred tax assets and liabilities\", \"changes in tax laws and regulations\"], \"potential_outcome_of_tax_controversy\": \"a material effect\"}",
+    "source_ticker": "AMZN",
+    "prompt_version": "v2",
+    "category": "structured",
+    "text": "<s>[INST] What factors could affect the company's effective tax rates, and what is the potential outcome of developments in an audit, investigation, or other tax controversy, as stated in the text, in JSON format? [/INST] {\"factors_affecting_tax_rates\": [\"changes in business operations\", \"acquisitions\", \"investments\", \"entry into new businesses and geographies\", \"intercompany transactions\", \"relative amount of foreign earnings\", \"losses incurred in jurisdictions\", \"applicability of special tax regimes\", \"changes in foreign exchange rates\", \"changes in stock price\", \"changes to forecasts of income and loss\", \"changes in deferred tax assets and liabilities\", \"changes in tax laws and regulations\"], \"potential_outcome_of_tax_controversy\": \"a material effect\"}</s>"
+  },
+  {
+    "id": "sft_0051",
+    "instruction": "What regions is Progress Group, QPR's representative, responsible for?",
+    "input": "",
+    "output": "Saudi Arabia and North Africa",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What regions is Progress Group, QPR's representative, responsible for? [/INST] Saudi Arabia and North Africa</s>"
+  },
+  {
+    "id": "sft_0052",
+    "instruction": "What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition?",
+    "input": "",
+    "output": "They are expected to considerably increase.",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition? [/INST] They are expected to considerably increase.</s>"
+  },
+  {
+    "id": "sft_0053",
+    "instruction": "What was the average number of Family daily active people (DAP) for June 2025?",
+    "input": "",
+    "output": "3.48 billion",
+    "source_ticker": "META",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What was the average number of Family daily active people (DAP) for June 2025? [/INST] 3.48 billion</s>"
+  },
+  {
+    "id": "sft_0054",
+    "instruction": "What is the total amount authorized by the Board of Directors for the repurchase of common stock?",
+    "input": "",
+    "output": "$25 billion",
+    "source_ticker": "NFLX",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What is the total amount authorized by the Board of Directors for the repurchase of common stock? [/INST] $25 billion</s>"
+  },
+  {
+    "id": "sft_0055",
+    "instruction": "What type of operations are mentioned in the text as being voice-directed?",
+    "input": "",
+    "output": "Voice-directed operations",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "factual",
+    "text": "<s>[INST] What type of operations are mentioned in the text as being voice-directed? [/INST] Voice-directed operations</s>"
+  },
+  {
+    "id": "sft_0056",
+    "instruction": "What methods will the company use to adapt its operations, and provide the answer as a JSON object with a single field \"methods\" containing a list of these methods?",
+    "input": "",
+    "output": "{\"methods\": [\"temporary lay-offs of different duration\", \"working hour arrangements\", \"training and development efforts\"]}",
+    "source_ticker": "phrasebank",
+    "prompt_version": "v2",
+    "category": "structured",
+    "text": "<s>[INST] What methods will the company use to adapt its operations, and provide the answer as a JSON object with a single field \"methods\" containing a list of these methods? [/INST] {\"methods\": [\"temporary lay-offs of different duration\", \"working hour arrangements\", \"training and development efforts\"]}</s>"
+  }
+]

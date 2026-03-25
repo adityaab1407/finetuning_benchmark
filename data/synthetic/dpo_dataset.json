@@ -1,0 +1,450 @@
+[
+  {
+    "id": "dpo_0001",
+    "prompt": "What is the amount of manufacturing purchase obligations payable within 12 months as of June 28, 2025?",
+    "chosen": "$43.8 billion",
+    "rejected": "The Netherlands",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0002",
+    "prompt": "What is the one dark spot on the horizon mentioned in the text?",
+    "chosen": "The company's performance in the Finnish bottled water market.",
+    "rejected": "$5.0 billion for Q2 2024 and $4.6 billion for Q2 2025.",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0003",
+    "prompt": "What is the total carrying value of senior unsecured notes outstanding as of June 30, 2025?",
+    "chosen": "$24.6 billion",
+    "rejected": "Saudi Arabia and North Africa",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0004",
+    "prompt": "What was the percentage increase in sales for the Foundries division and the Machine Shop division, and what were their respective sales in EUR million?",
+    "chosen": "{\"Foundries\": {\"percentage increase\": 9.7, \"sales\": 63.1}, \"Machine Shop\": {\"percentage increase\": 16.4, \"sales\": 41.2}}",
+    "rejected": "Infrastructure costs include servers, networking equipment, and data center related depreciation and amortization, rent, utilities, and other expenses necessary to support AWS and other Amazon businesses.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0005",
+    "prompt": "What was the total amount returned to shareholders in the form of share repurchases and dividends in the first quarter of fiscal year 2026?",
+    "chosen": "$10.7 billion",
+    "rejected": "$8.43 billion, or 22%",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0006",
+    "prompt": "What were the capital expenditures for the six months ended June 30, 2024 and 2025?",
+    "chosen": "$25.2 billion and $39.6 billion, respectively.",
+    "rejected": "The main components of our R&D expenses are: employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0007",
+    "prompt": "What was the special assessment accrual recorded in Corporate in the first quarter of 2025?",
+    "chosen": "$323 million",
+    "rejected": "They are expected to considerably increase.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0008",
+    "prompt": "What is a factor that may inhibit the company's ability to adequately staff its research and development efforts, according to the text?",
+    "chosen": "Restraints on the flow of technical and professional talent, including those derived from changes to U.S. immigration policies or laws.",
+    "rejected": "Voice-directed operations",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0009",
+    "prompt": "What is the total amount by which changes in foreign exchange rates positively impacted operating income for Q2 2025 and the six months ended June 30, 2025?",
+    "chosen": "$620 million ($338 million for Q2 2025 and $282 million for six months ended June 30, 2025)",
+    "rejected": "$725 million",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0010",
+    "prompt": "What were the shipping costs for the six months ended June 30, 2024 and 2025?",
+    "chosen": "$43.8 billion and $45.9 billion",
+    "rejected": "\u20ac3.5 billion ($3.9 billion)",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0011",
+    "prompt": "What is the total amount authorized by the Board of Directors for the repurchase of common stock?",
+    "chosen": "$25 billion",
+    "rejected": "$43.8 billion and $45.9 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0012",
+    "prompt": "What types of expenses are included in the infrastructure costs mentioned in the text?",
+    "chosen": "Infrastructure costs include servers, networking equipment, and data center related depreciation and amortization, rent, utilities, and other expenses necessary to support AWS and other Amazon businesses.",
+    "rejected": "$9.9 billion, up 5%",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0013",
+    "prompt": "What was the increase in operating margin for the three months ended June 30, 2025, compared to the prior comparative period?",
+    "chosen": "approximately seven percentage points",
+    "rejected": "$25 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0014",
+    "prompt": "What is the main goal stated in the given financial text?",
+    "chosen": "The main goal is to understand different traffic patterns based on the use of each building.",
+    "rejected": "2025, June 30",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0015",
+    "prompt": "What is the par value per share of the common stock of Microsoft Corporation?",
+    "chosen": "$0.00000625",
+    "rejected": "The increase in Litigation provision is primarily due to higher accruals related to the U.S. covered litigation.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0016",
+    "prompt": "What is the approximate reduction in network building costs for the UMTS900 solution compared to 3.5 G networks?",
+    "chosen": "One-third lower",
+    "rejected": "{\"methods\": [\"temporary lay-offs of different duration\", \"working hour arrangements\", \"training and development efforts\"]}",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0017",
+    "prompt": "What was the increase in FoA revenue in the three months ended June 30, 2025, compared to the same period in 2024?",
+    "chosen": "$8.43 billion, or 22%",
+    "rejected": "{\"Foundries\": {\"percentage increase\": 9.7, \"sales\": 63.1}, \"Machine Shop\": {\"percentage increase\": 16.4, \"sales\": 41.2}}",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0018",
+    "prompt": "What is the one dark spot on the horizon mentioned in the text?",
+    "chosen": "The company's performance in the Finnish bottled water market.",
+    "rejected": "Voice-directed operations",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0019",
+    "prompt": "What is the date of the end of the nine-month period for the data in the provided table for 2024?",
+    "chosen": "June 29, 2024",
+    "rejected": "$7.9 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0020",
+    "prompt": "What was the aggregate principal amount of the Euro-denominated fixed-rate senior notes issued in May 2025?",
+    "chosen": "\u20ac3.5 billion ($3.9 billion)",
+    "rejected": "$10.7 billion",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0021",
+    "prompt": "What are the main components of the R&D expenses, as mentioned in the text?",
+    "chosen": "The main components of our R&D expenses are: employee compensation expenses for engineering and technical employees responsible for R&D related to our existing and new products and services; and third-party services fees primarily relating to consulting and outsourced services in support of our engineering and product development efforts.",
+    "rejected": "FCC Chairman Kevin Martin",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0022",
+    "prompt": "What type of operations are mentioned in the text as being voice-directed?",
+    "chosen": "Voice-directed operations",
+    "rejected": "$25 billion",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0023",
+    "prompt": "What was the amount of foreign exchange losses, net of the impacts of derivatives and hedging, in the six months ended June 30, 2025?",
+    "chosen": "$72 million",
+    "rejected": "They will considerably increase.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0024",
+    "prompt": "What are the financing obligations for Q2 2024 and Q2 2025 as mentioned in the text?",
+    "chosen": "$5.0 billion for Q2 2024 and $4.6 billion for Q2 2025.",
+    "rejected": "$72 million",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0025",
+    "prompt": "What was the total amount spent on common stock repurchases for the nine months ended June 30, 2025?",
+    "chosen": "$13.2 billion",
+    "rejected": "$4.6 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0026",
+    "prompt": "What is the par value per share of the common stock of Microsoft Corporation?",
+    "chosen": "$0.00000625",
+    "rejected": "$13.2 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0027",
+    "prompt": "Who is the analyst quoted in the text as discussing NAVTEQ's lead in installed map data systems?",
+    "chosen": "Phil Magney of Telematics Research Group",
+    "rejected": "$43.8 billion",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0028",
+    "prompt": "What is the size of the building where Kesko offers Hilton to open a hotel?",
+    "chosen": "18,000 square metres",
+    "rejected": "$0.00000625",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0029",
+    "prompt": "Who, according to the text, said that fair play required extending the same deregulatory rules to the digital subscriber lines that telecom providers use for broadband networks?",
+    "chosen": "FCC Chairman Kevin Martin",
+    "rejected": "December 2007",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0030",
+    "prompt": "What is the reason for the increase in Litigation provision over the three-month prior-year comparable period?",
+    "chosen": "The increase in Litigation provision is primarily due to higher accruals related to the U.S. covered litigation.",
+    "rejected": "June 29, 2024",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0031",
+    "prompt": "In which country is the Amsterdam office located where the workforce will be reduced?",
+    "chosen": "The Netherlands",
+    "rejected": "The first-in first-out method, and they are valued at the lower of cost and net realizable value.",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0032",
+    "prompt": "What accounting method is primarily used for valuing inventories, and how are they valued?",
+    "chosen": "The first-in first-out method, and they are valued at the lower of cost and net realizable value.",
+    "rejected": "$5.0 billion and $4.6 billion respectively.",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0033",
+    "prompt": "What is the date of the end of the three- and nine-month periods for the 2024 fiscal year mentioned in the text?",
+    "chosen": "June 29, 2024",
+    "rejected": "Phil Magney of Telematics Research Group",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0034",
+    "prompt": "What was the amount of noninterest expense, and what was the percentage increase in noninterest expense?",
+    "chosen": "$9.9 billion, up 5%",
+    "rejected": "approximately seven percentage points",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0035",
+    "prompt": "What is the assessment of Trygvesta's ability to acquire the entire unit, according to Bosse?",
+    "chosen": "Trygvesta does not have the financial strength to acquire the entire unit.",
+    "rejected": "EUR 1 million",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0036",
+    "prompt": "What was the amount paid by Facebook as part of the settlement agreement to resolve the lawsuit related to consumer privacy user profile litigation?",
+    "chosen": "$725 million",
+    "rejected": "June 29, 2024",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0037",
+    "prompt": "What are the financing obligations for Q2 2024 and Q2 2025?",
+    "chosen": "$5.0 billion and $4.6 billion respectively.",
+    "rejected": "{\"factors_affecting_tax_rates\": [\"changes in business operations\", \"acquisitions\", \"investments\", \"entry into new businesses and geographies\", \"intercompany transactions\", \"relative amount of foreign earnings\", \"losses incurred in jurisdictions\", \"applicability of special tax regimes\", \"changes in foreign exchange rates\", \"changes in stock price\", \"changes to forecasts of income and loss\", \"changes in deferred tax assets and liabilities\", \"changes in tax laws and regulations\"], \"potential_outcome_of_tax_controversy\": \"a material effect\"}",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0038",
+    "prompt": "Who supports quitting and pays part of the cost of nicotine treatments, according to the text?",
+    "chosen": "The employer, together with health personnel.",
+    "rejected": "The main goal is to understand different traffic patterns based on the use of each building.",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0039",
+    "prompt": "What was the provision for credit losses in the prior year, according to the text?",
+    "chosen": "$4.6 billion",
+    "rejected": "$42 million",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0040",
+    "prompt": "What is the worth of the contract in euros?",
+    "chosen": "EUR 1 million",
+    "rejected": "$25 billion",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0041",
+    "prompt": "What is the primary reason for the increase in sales and marketing costs in Q2 2025 and for the six months ended June 30, 2025, compared to the comparable prior year periods?",
+    "chosen": "Increased advertising expenses, partially offset by decreased payroll and related expenses for personnel engaged in marketing and selling activities.",
+    "rejected": "$24.6 billion",
+    "chosen_score": 0.9,
+    "rejected_score": 0.6000000000000001
+  },
+  {
+    "id": "dpo_0042",
+    "prompt": "What is the total amount of common stock authorized for repurchase by the Board of Directors?",
+    "chosen": "$25 billion",
+    "rejected": "18,000 square metres",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0043",
+    "prompt": "What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition?",
+    "chosen": "They will considerably increase.",
+    "rejected": "The employer, together with health personnel.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0044",
+    "prompt": "What are the dimensions of Mega Image's logistics center in terms of length and height?",
+    "chosen": "The logistics center will be 347 metres in length and 12 metres in height.",
+    "rejected": "$25.2 billion and $39.6 billion, respectively.",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0045",
+    "prompt": "What is the year and month mentioned in the text as the end period for the comparison of revenues?",
+    "chosen": "2025, June 30",
+    "rejected": "Trygvesta does not have the financial strength to acquire the entire unit.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0046",
+    "prompt": "What was the increase in expenses incurred in connection with the advertising offering for the six months ended June 30, 2025, as compared to the six months ended June 30, 2024?",
+    "chosen": "$42 million",
+    "rejected": "The logistics center will be 347 metres in length and 12 metres in height.",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0047",
+    "prompt": "What was the net gain related to Visa shares recorded in the prior year?",
+    "chosen": "$7.9 billion",
+    "rejected": "$323 million",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0048",
+    "prompt": "Who is the Finnair spokesman mentioned in the text?",
+    "chosen": "Usko Maatta",
+    "rejected": "3.48 billion",
+    "chosen_score": 0.8,
+    "rejected_score": 0.5
+  },
+  {
+    "id": "dpo_0049",
+    "prompt": "In what month and year was clothing chain Lindex included in the Group?",
+    "chosen": "December 2007",
+    "rejected": "$620 million ($338 million for Q2 2025 and $282 million for six months ended June 30, 2025)",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0050",
+    "prompt": "What factors could affect the company's effective tax rates, and what is the potential outcome of developments in an audit, investigation, or other tax controversy, as stated in the text, in JSON format?",
+    "chosen": "{\"factors_affecting_tax_rates\": [\"changes in business operations\", \"acquisitions\", \"investments\", \"entry into new businesses and geographies\", \"intercompany transactions\", \"relative amount of foreign earnings\", \"losses incurred in jurisdictions\", \"applicability of special tax regimes\", \"changes in foreign exchange rates\", \"changes in stock price\", \"changes to forecasts of income and loss\", \"changes in deferred tax assets and liabilities\", \"changes in tax laws and regulations\"], \"potential_outcome_of_tax_controversy\": \"a material effect\"}",
+    "rejected": "$0.00000625",
+    "chosen_score": 0.9,
+    "rejected_score": 0.6000000000000001
+  },
+  {
+    "id": "dpo_0051",
+    "prompt": "What regions is Progress Group, QPR's representative, responsible for?",
+    "chosen": "Saudi Arabia and North Africa",
+    "rejected": "One-third lower",
+    "chosen_score": 0.85,
+    "rejected_score": 0.55
+  },
+  {
+    "id": "dpo_0052",
+    "prompt": "What is expected to happen to Kemira's sales and market position in the Russian metal industry coatings market as a result of the acquisition?",
+    "chosen": "They are expected to considerably increase.",
+    "rejected": "The company's performance in the Finnish bottled water market.",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0053",
+    "prompt": "What was the average number of Family daily active people (DAP) for June 2025?",
+    "chosen": "3.48 billion",
+    "rejected": "Usko Maatta",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0054",
+    "prompt": "What is the total amount authorized by the Board of Directors for the repurchase of common stock?",
+    "chosen": "$25 billion",
+    "rejected": "The company's performance in the Finnish bottled water market.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  },
+  {
+    "id": "dpo_0055",
+    "prompt": "What type of operations are mentioned in the text as being voice-directed?",
+    "chosen": "Voice-directed operations",
+    "rejected": "Restraints on the flow of technical and professional talent, including those derived from changes to U.S. immigration policies or laws.",
+    "chosen_score": 0.7,
+    "rejected_score": 0.39999999999999997
+  },
+  {
+    "id": "dpo_0056",
+    "prompt": "What methods will the company use to adapt its operations, and provide the answer as a JSON object with a single field \"methods\" containing a list of these methods?",
+    "chosen": "{\"methods\": [\"temporary lay-offs of different duration\", \"working hour arrangements\", \"training and development efforts\"]}",
+    "rejected": "Increased advertising expenses, partially offset by decreased payroll and related expenses for personnel engaged in marketing and selling activities.",
+    "chosen_score": 1.0,
+    "rejected_score": 0.7
+  }
+]

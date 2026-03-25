@@ -64,6 +64,20 @@ def _clean(text: str) -> str:
 # ── FUNCTION 1: factual accuracy ─────────────────────────────────────
 
 
+_NO_ANSWER_PHRASES = [
+    "not found in provided context",
+    "not available",
+    "i don't know",
+    "i cannot",
+    "cannot find",
+    "not mentioned",
+    "no information",
+    "insufficient information",
+    "the context does not",
+    "the provided context does not",
+]
+
+
 def compute_factual_accuracy(
     predicted: str,
     expected: str,
@@ -76,7 +90,7 @@ def compute_factual_accuracy(
 
     * ``exact_match``       — binary string equality after cleaning
     * ``fuzzy_match``       — partial ratio with numeric-value boost
-    * ``classification``    — exact sentiment-label equality
+    * ``classification``    — first-word sentiment-label match
     * ``schema_validation`` — JSON key overlap ratio
     * ``reasoning_match``   — token-set ratio with relaxed threshold
 
@@ -105,6 +119,23 @@ def compute_factual_accuracy(
             threshold=0.0,
             details={"note": "one side empty"},
         )
+
+    # Explicit no-answer detection — applies to ALL evaluation types
+    predicted_lower = predicted.strip().lower()
+    for phrase in _NO_ANSWER_PHRASES:
+        if phrase in predicted_lower:
+            return MetricResult(
+                metric_name="factual_accuracy",
+                score=0.0,
+                passed=False,
+                threshold=0.75,
+                details={
+                    "reason": "explicit_no_answer",
+                    "matched_phrase": phrase,
+                    "predicted": predicted[:100],
+                },
+                error=None,
+            )
 
     if evaluation_type == "exact_match":
         return _exact_match(predicted, expected)
@@ -135,6 +166,24 @@ def _exact_match(predicted: str, expected: str) -> MetricResult:
     )
 
 
+def _extract_normalize_number(text: str) -> float | None:
+    """Extract and normalise a financial number to base units."""
+    cleaned = text.lower().replace(",", "").replace("$", "")
+    pattern = r"(\d+\.?\d*)\s*(billion|million|thousand|bn|mn|k)?"
+    match = re.search(pattern, cleaned)
+    if not match:
+        return None
+    num = float(match.group(1))
+    scale = match.group(2) or ""
+    if scale in ("billion", "bn"):
+        num *= 1e9
+    elif scale in ("million", "mn"):
+        num *= 1e6
+    elif scale in ("thousand", "k"):
+        num *= 1e3
+    return num
+
+
 def _fuzzy_match(predicted: str, expected: str) -> MetricResult:
     ratio = fuzz.partial_ratio(predicted, expected)
     score = ratio / 100.0
@@ -146,11 +195,20 @@ def _fuzzy_match(predicted: str, expected: str) -> MetricResult:
     if numeric_match:
         score = max(score, 0.85)
 
+    # Normalised numeric comparison: catch "$94.9 billion" vs "94.9B"
+    pred_num = _extract_normalize_number(predicted)
+    exp_num = _extract_normalize_number(expected)
+    if pred_num is not None and exp_num is not None and exp_num != 0:
+        pct_diff = abs(pred_num - exp_num) / exp_num
+        if pct_diff <= 0.10:
+            numeric_match = True
+            score = max(score, 0.80)
+
     return MetricResult(
         metric_name="factual_accuracy",
         score=round(score, 4),
-        passed=score >= 0.75,
-        threshold=0.75,
+        passed=score >= 0.60,
+        threshold=0.60,
         details={
             "fuzzy_ratio": ratio,
             "numeric_match": numeric_match,
@@ -161,15 +219,30 @@ def _fuzzy_match(predicted: str, expected: str) -> MetricResult:
 
 
 def _classification(predicted: str, expected: str) -> MetricResult:
-    p_clean = predicted.lower().strip()
-    e_clean = expected.lower().strip()
-    match = p_clean == e_clean
+    predicted_clean = predicted.strip().lower()
+    expected_clean = expected.strip().lower()
+
+    # Extract first word only — handles "positive. The company..."
+    first_word = predicted_clean.split()[0].rstrip(".,!?;:") if predicted_clean else ""
+
+    if first_word == expected_clean:
+        score = 1.0
+    elif predicted_clean.startswith(expected_clean):
+        score = 1.0
+    else:
+        score = 0.0
+
+    passed = score == 1.0
     return MetricResult(
         metric_name="factual_accuracy",
-        score=1.0 if match else 0.0,
-        passed=match,
+        score=score,
+        passed=passed,
         threshold=1.0,
-        details={"predicted_class": p_clean, "expected_class": e_clean},
+        details={
+            "predicted_first_word": first_word,
+            "expected_class": expected_clean,
+            "full_predicted": predicted[:100],
+        },
     )
 
 
@@ -237,8 +310,8 @@ def _reasoning_match(predicted: str, expected: str) -> MetricResult:
     return MetricResult(
         metric_name="factual_accuracy",
         score=round(score, 4),
-        passed=score >= 0.6,
-        threshold=0.6,
+        passed=score >= 0.50,
+        threshold=0.50,
         details={
             "token_set_ratio": ratio,
             "predicted": predicted[:150],

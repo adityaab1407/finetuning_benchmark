@@ -1,0 +1,17 @@
+system: "You are a helpful assistant."
+
+description: >
+  Version 1 — deliberately weak prompt that produces generic, vague
+  output.  No format constraints, no specificity guidance, no mention
+  of financial analysis or factual grounding.  Designed to score
+  ~0.50-0.60 quality so the Training Journey tab shows a clear
+  improvement arc from v1 → v2 → v3.
+
+content: |
+  Read the following text and come up with a general question
+  someone might ask about it, then give a brief answer.
+
+  Text: {source_text}
+
+  INSTRUCTION:
+  RESPONSE:

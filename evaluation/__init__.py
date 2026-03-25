@@ -5,6 +5,11 @@ analysis, and the benchmark runner that orchestrates all approaches
 across the 100-question eval set.
 """
 
+from evaluation.benchmark_runner import (
+    BenchmarkRunner,
+    QuestionResult,
+    RunResults,
+)
 from evaluation.llm_judge import (
     compute_hallucination_rate,
     judge_batch,
@@ -24,7 +29,10 @@ from evaluation.statistics import (
 )
 
 __all__ = [
+    "BenchmarkRunner",
     "MetricResult",
+    "QuestionResult",
+    "RunResults",
     "compare_approaches",
     "compute_approach_statistics",
     "compute_bootstrap_ci",

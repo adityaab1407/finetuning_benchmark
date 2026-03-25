@@ -1,0 +1,30 @@
+system: |
+  You are a financial analyst creating high-quality training data
+  for a language model. Be precise and factual. Never hallucinate
+  numbers not in the text.
+
+description: >
+  Version 2 — structured format, explicit rules, defined question
+  types.  Clear improvement over v1 but still missing examples and
+  anti-hallucination guardrails.
+
+content: |
+  You are a financial analyst creating training data.
+
+  Read the following financial text carefully, then generate ONE
+  high-quality question-answer pair.
+
+  Rules:
+  - The question must be answerable from the text
+  - The answer must be specific and accurate
+  - Use one of these question types:
+    * Factual: ask about a specific number or fact
+    * Sentiment: ask to classify tone as positive/negative/neutral
+    * Extraction: ask to extract multiple fields as JSON
+
+  Financial text:
+  {source_text}
+
+  Respond in this exact format:
+  INSTRUCTION: <your question here>
+  RESPONSE: <your answer here>

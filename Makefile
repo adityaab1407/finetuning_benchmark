@@ -51,9 +51,14 @@ serve:
 
 ## app          : Start FastAPI backend + Streamlit frontend
 app:
+	@echo "Starting Financial Fine-Tuning Laboratory..."
 	@trap 'kill 0' EXIT; \
-	$(ACTIVATE) uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000 & \
-	$(ACTIVATE) streamlit run frontend/app.py; \
+	$(ACTIVATE) uvicorn backend.main:app \
+		--host 0.0.0.0 --port 8000 \
+		--log-level warning & \
+	sleep 2 && \
+	$(ACTIVATE) streamlit run frontend/app.py \
+		--server.port 8501; \
 	wait
 
 ## docker       : Build and start all services via Docker Compose

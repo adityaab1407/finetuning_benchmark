@@ -52,6 +52,11 @@ class Settings(BaseSettings):
     CHROMA_COLLECTION_NAME: str = "financial_docs"
     CHROMA_PERSIST_DIR: str = "data/chroma_db"
 
+    # ── SYNTHETIC DATA ──────────────────────────────────────────────────
+    HF_USERNAME: str = ""
+    SYNTHETIC_TARGET_PAIRS: int = 100
+    QUALITY_THRESHOLD: float = 0.65
+
     # ── TRAINING ──────────────────────────────────────────────────────
     HF_TOKEN: str = ""
     WANDB_API_KEY: str = ""
